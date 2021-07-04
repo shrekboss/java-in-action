@@ -12,9 +12,9 @@ public class Hello {
          return max;
      }
 
-//    public static void main(String[] args) {
-//        Hello hello = new Hello();
-//        int[] height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
-//        System.out.println(hello.maxArea(height));
-//    }
+    public static void main(String[] args) {
+        Hello hello = new Hello();
+        int[] height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+        System.out.println(hello.maxArea(height));
+    }
 }
