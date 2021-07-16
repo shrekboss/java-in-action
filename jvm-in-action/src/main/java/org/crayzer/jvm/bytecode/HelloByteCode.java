@@ -1,7 +1,7 @@
 package org.crayzer.jvm.bytecode;
 
 /**
- * javap -c -verbose jvm-in-action/target/classes/org/crayzer/jvm/bytecode/HelloByteCode
+ * javap -c -verbose org.crayzer.jvm.bytecode.HelloByteCode
  */
 public class HelloByteCode {
     public static void main(String[] args) {

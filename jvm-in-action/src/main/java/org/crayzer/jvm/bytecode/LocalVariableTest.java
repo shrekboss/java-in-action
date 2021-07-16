@@ -1,9 +1,9 @@
 package org.crayzer.jvm.bytecode;
 
 /**
- * javac -g jvm-in-action/src/main/java/org/crayzer/jvm/bytecode/HelloByteCode.java
+ * javac -g HelloByteCode.java
  * <p/>
- * javap -c -verbose jvm-in-action/target/classes/org/crayzer/jvm/bytecode/LocalVariableTest
+ * javap -c -verbose org.crayzer.jvm.bytecode.LocalVariableTest
  */
 public class LocalVariableTest {
 

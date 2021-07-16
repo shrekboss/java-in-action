@@ -8,6 +8,9 @@ import java.util.concurrent.atomic.LongAdder;
  * java 没设置 -classpath / -cp，默认从当前目录（也就是你执行 java 命令的目录）找 class 文件，
  * 当你执行的类中存在 package ，JVM 会从当前目录，顺着你的 package 目录找下，这时候就
  * 找不到了，因为你当前目录没有 package 所指定目录及该类
+ *
+ * <p/>
+ * cd /Users/yizhe.chen/workspace/github/java-in-action/jvm-in-action/target/classes
  * <p/>
  * java -XX:+UseSerialGC -Xms512m -Xmx512m -Xloggc:gc.serial.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
  * <p/>

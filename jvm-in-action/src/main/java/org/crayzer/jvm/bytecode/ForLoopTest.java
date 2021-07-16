@@ -1,7 +1,7 @@
 package org.crayzer.jvm.bytecode;
 
 /**
- * javap -c -verbose jvm-in-action/target/classes/org/crayzer/jvm/bytecode/ForLoopTest
+ * javap -c -verbose org.crayzer.jvm.bytecode.ForLoopTest
  */
 public class ForLoopTest {
     private static final int[] numsbers = {1, 6, 8};

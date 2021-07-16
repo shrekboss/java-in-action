@@ -12,6 +12,7 @@
         <module>jvm-in-action</module>
         <module>nio-in-action</module>
     </modules>
+
     <packaging>pom</packaging>
 
     <properties>
