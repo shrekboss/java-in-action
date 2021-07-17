@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.countDownLatch;
+package org.crayzer.conc.jdkconcurrentutil.tool.countDownLatch;
 
 import java.util.concurrent.CountDownLatch;
 
