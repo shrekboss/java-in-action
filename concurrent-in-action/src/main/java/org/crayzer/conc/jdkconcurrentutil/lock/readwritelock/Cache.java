@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.readwritelock;
+package org.crayzer.conc.jdkconcurrentutil.lock.readwritelock;
 
 
 import java.util.HashMap;

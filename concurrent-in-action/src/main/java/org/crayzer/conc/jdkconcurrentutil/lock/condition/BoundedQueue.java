@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.condition;
+package org.crayzer.conc.jdkconcurrentutil.lock.condition;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

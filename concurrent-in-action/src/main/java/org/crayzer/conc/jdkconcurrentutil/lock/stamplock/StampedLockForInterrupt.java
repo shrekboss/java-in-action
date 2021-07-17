@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.stamplock;
+package org.crayzer.conc.jdkconcurrentutil.lock.stamplock;
 
 import org.junit.Test;
 

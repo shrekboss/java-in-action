@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.reentrantlock;
+package org.crayzer.conc.jdkconcurrentutil.lock.reentrantlock;
 
 import org.junit.Test;
 
