@@ -4,7 +4,7 @@ public class ThreadMain2 {
 
     public static void main(String[] args) {
 
-        java0.conc0301.ThreadB threadB = new java0.conc0301.ThreadB();
+        ThreadB threadB = new ThreadB();
         for (int i = 0; i < 5; i++) {
             new Thread(threadB, "线程名称：（" + i + "）").start();
         }

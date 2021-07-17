@@ -7,11 +7,11 @@ public class ThreadMain {
 
     public static void main(String[] args) {
 
-        java0.conc0301.ThreadA threadA = new java0.conc0301.ThreadA();
+        ThreadA threadA = new ThreadA();
         threadA.start();
         System.out.println("这是主线程：");
 
-        java0.conc0301.ThreadB threadB = new java0.conc0301.ThreadB();
+        ThreadB threadB = new ThreadB();
         new Thread(threadB).start();
         System.out.println("这是主线程：");
 
