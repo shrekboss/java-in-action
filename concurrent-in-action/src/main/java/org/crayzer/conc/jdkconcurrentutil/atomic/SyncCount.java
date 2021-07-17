@@ -1,0 +1,26 @@
+
+package org.crayzer.conc.jdkconcurrentutil.atomic;
+
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+public class SyncCount {
+
+    private int num = 0;
+
+//    private Lock lock = new ReentrantLock(true); // 570705
+    private Lock lock = new ReentrantLock(); // 1000000
+
+    public int add() {
+        try {
+            lock.lock();
+            return num++;
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public int getNum() {
+        return num;
+    }
+}
