@@ -11,6 +11,12 @@
 
     <artifactId>concurrent-in-action</artifactId>
 
+    <properties>
+        <spring-cloud.version>Greenwich.SR4</spring-cloud.version>
+        <spring-boot.version>2.2.1.RELEASE</spring-boot.version>
+        <spring-data.version>Moore-SR4</spring-data.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

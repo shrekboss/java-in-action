@@ -12,6 +12,7 @@
         <module>jvm-in-action</module>
         <module>nio-in-action</module>
         <module>concurrent-in-action</module>
+        <module>spring-in-action</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -19,9 +20,6 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <spring-cloud.version>Greenwich.SR4</spring-cloud.version>
-        <spring-boot.version>2.2.1.RELEASE</spring-boot.version>
-        <spring-data.version>Moore-SR4</spring-data.version>
     </properties>
 
 </project>
