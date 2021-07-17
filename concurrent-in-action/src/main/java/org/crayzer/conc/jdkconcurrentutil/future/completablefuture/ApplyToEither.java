@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.completablefuture;
+package org.crayzer.conc.jdkconcurrentutil.future.completablefuture;
 
 import java.util.Random;
 import java.util.concurrent.CompletableFuture;
