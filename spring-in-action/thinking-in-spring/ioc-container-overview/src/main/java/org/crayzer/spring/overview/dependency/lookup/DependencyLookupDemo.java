@@ -11,8 +11,6 @@ import java.util.Map;
 
 /**
  * 依赖查找实例
- *
- * @author yizhe.chen
  */
 public class DependencyLookupDemo {
 

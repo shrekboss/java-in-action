@@ -2,6 +2,7 @@ package org.crayzer.spring.overview.dependency.injection;
 
 import org.crayzer.spring.overview.domain.User;
 import org.crayzer.spring.overview.repository.UserRepository;
+import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,8 +17,11 @@ public class DependencyInjectionDemo {
 
     /**
      * 依赖注入 和 依赖查找都属于依赖，但是来源是不一样的
+     * <p/>
      * 1. 依赖来源一：自定义 Bean
+     * <p/>
      * 2. 依赖来源二：容器内建依赖，非 Spring Bean，eg BeanFactory
+     * <p/>
      * 3. 依赖来源三：容器内建，eg Environment
      */
     public static void main(String[] args) {
@@ -29,12 +33,13 @@ public class DependencyInjectionDemo {
         System.out.println("===依赖来源一：自定义 Bean " + userRepository);
 
         /*依赖注入*/
-        // .DefaultListableBeanFactory@614c5515
+        // DefaultListableBeanFactory@614c5515
         // 依赖来源二：内建依赖(eg: BeanFactory)
         System.out.println("==========华丽的分割线===========");
         System.out.println("===依赖来源二：内建依赖 " + userRepository.getBeanFactory());
+
         System.out.println("ClassPathXmlApplicationContext: " + applicationContext);
-        whoIsIoCContainer(applicationContext, userRepository);
+        whoIsIoCContainer(applicationContext, userRepository.getBeanFactory());
 
         ObjectFactory<User> userObjectFactory = userRepository.getUserObjectFactory();
         System.out.println(userObjectFactory.getObject());
@@ -67,8 +72,8 @@ public class DependencyInjectionDemo {
      * ConfigurableApplicationContext <- ApplicationContext <- BeanFacatory
      * ConfigurableApplicationContext#getBeanFactory() ===> private DefaultListableBeanFactory beanFactory;
      */
-    private static void whoIsIoCContainer(ApplicationContext applicationContext, UserRepository userRepository) {
-        System.out.println("userRepository.getBeanFactory() == applicationContext 是否相等：" + (userRepository.getBeanFactory() == applicationContext));
+    private static void whoIsIoCContainer(ApplicationContext applicationContext, BeanFactory beanFactory) {
+        System.out.println("userRepository.getBeanFactory() == applicationContext 是否相等：" + (beanFactory == applicationContext.getParentBeanFactory()));
     }
 
 }
