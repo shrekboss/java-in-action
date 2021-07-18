@@ -7,7 +7,6 @@ public class WaitAndNotify {
             try {
                 methodClass.product();
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }, "t1");
@@ -15,22 +14,12 @@ public class WaitAndNotify {
             try {
                 methodClass.customer();
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }, "t2");
-//        Thread t3 = new Thread(() -> {
-//            try {
-//                methodClass.customer();
-//            } catch (InterruptedException e) {
-//                // TODO Auto-generated catch block
-//                e.printStackTrace();
-//            }
-//        }, "t3");
+
         t1.start();
         t2.start();
-        //t3.start();
-        
     }
 }
 
