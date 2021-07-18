@@ -4,7 +4,7 @@ package org.crayzer.spring.overview.domain;
 import org.crayzer.spring.overview.annotation.Super;
 
 /**
- * @author yizhe.chen
+ * 
  */
 @Super
 public class SuperUser extends User {

@@ -6,7 +6,7 @@ import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;
 
 /**
- * @author yizhe.chen
+ * 
  */
 public class SumTask extends RecursiveTask<Long> {
 

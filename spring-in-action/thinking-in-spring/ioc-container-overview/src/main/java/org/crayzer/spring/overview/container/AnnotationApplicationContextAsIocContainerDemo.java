@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * 具有注解能力 {@link ApplicationContext} Ioc 容器示例
  *
- * @author yizhe.chen
+ * 
  */
 public class AnnotationApplicationContextAsIocContainerDemo {
 

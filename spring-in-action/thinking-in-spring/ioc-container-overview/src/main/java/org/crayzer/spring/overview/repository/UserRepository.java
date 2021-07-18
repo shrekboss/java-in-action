@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 import java.util.Collection;
 
 /**
- * @author yizhe.chen
+ * 
  */
 public class UserRepository {
 

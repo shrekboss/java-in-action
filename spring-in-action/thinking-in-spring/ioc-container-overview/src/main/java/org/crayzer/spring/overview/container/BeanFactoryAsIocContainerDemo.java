@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * {@link BeanFactory} 底层 Ioc 容器实例
  *
- * @author yizhe.chen
+ * 
  */
 public class BeanFactoryAsIocContainerDemo {
 

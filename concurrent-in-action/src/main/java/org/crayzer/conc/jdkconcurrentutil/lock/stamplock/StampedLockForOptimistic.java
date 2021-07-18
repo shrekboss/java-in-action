@@ -3,7 +3,7 @@ package org.crayzer.conc.jdkconcurrentutil.lock.stamplock;
 import java.util.concurrent.locks.StampedLock;
 
 /**
- * @author yizhe.chen
+ * 
  */
 public class StampedLockForOptimistic {
 

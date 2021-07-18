@@ -11,7 +11,7 @@ import org.springframework.core.env.Environment;
 /**
  * 依赖注入实例
  *
- * @author yizhe.chen
+ * 
  */
 public class DependencyInjectionDemo {
 

@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author yizhe.chen
+ * 
  */
 public class User implements BeanNameAware {
 
