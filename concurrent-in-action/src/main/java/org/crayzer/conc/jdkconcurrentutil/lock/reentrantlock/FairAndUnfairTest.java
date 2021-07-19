@@ -1,7 +1,5 @@
 package org.crayzer.conc.jdkconcurrentutil.lock.reentrantlock;
 
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -17,17 +15,12 @@ public class FairAndUnfairTest {
     private static Lock fairLock = new ReentrantLock2(true);
     private static Lock unfairLock = new ReentrantLock2(false);
 
-    @Test
-    public void fair() {
-        testLock(fairLock);
-    }
-
-    @Test
-    public void unFair() {
+    public static void main(String[] args) {
+//        testLock(fairLock);
         testLock(unfairLock);
     }
 
-    private void testLock(Lock lock) {
+    private static void testLock(Lock lock) {
         for (int i = 0; i < 5; i++) {
             Thread t = new Job(lock);
             t.setName("" + i);

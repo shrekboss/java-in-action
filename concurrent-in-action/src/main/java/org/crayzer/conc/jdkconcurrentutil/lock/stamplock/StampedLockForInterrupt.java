@@ -1,7 +1,5 @@
 package org.crayzer.conc.jdkconcurrentutil.lock.stamplock;
 
-import org.junit.Test;
-
 import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.StampedLock;
 
@@ -13,8 +11,7 @@ import java.util.concurrent.locks.StampedLock;
  */
 public class StampedLockForInterrupt {
 
-    @Test
-    public void testStampedLockForInterrupt() throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
         final StampedLock lock = new StampedLock();
         Thread T1 = new Thread(() -> {

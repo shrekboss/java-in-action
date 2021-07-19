@@ -1,14 +1,12 @@
 package org.crayzer.conc.jdkconcurrentutil.aqs;
 
 import org.crayzer.conc.jdkconcurrentutil.SleepUtils;
-import org.junit.Test;
 
 import java.util.concurrent.locks.Lock;
 
 public class TwinsLockTest {
 
-    @Test
-    public void test() {
+    public static void main(String[] args) {
         final Lock lock = new TwinsLock();
 
         class Worker extends Thread {
