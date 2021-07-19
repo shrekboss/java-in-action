@@ -21,13 +21,13 @@ public class DependencyLookupDemo {
         /*通过名称查找对象*/
 //        lookupInRealTime(beanFactory);
         /*通过名称懒加载查找对象*/
-//        lookupInLazy(beanFactory);
+        lookupInLazy(beanFactory);
         /*通过类型查找对象*/
 //        lookupByType(beanFactory);
         /*通过类型查找集合对象*/
 //        lookupCollectionByType(beanFactory);
         /*通过注解查找集合对象*/
-        lookupByAnnotationType(beanFactory);
+//        lookupByAnnotationType(beanFactory);
     }
 
     private static void lookupByAnnotationType(BeanFactory beanFactory) {

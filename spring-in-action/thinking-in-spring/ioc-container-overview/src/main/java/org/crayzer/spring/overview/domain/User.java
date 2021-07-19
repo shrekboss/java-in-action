@@ -1,5 +1,7 @@
 package org.crayzer.spring.overview.domain;
 
+import lombok.Data;
+import lombok.ToString;
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.core.io.Resource;
 
@@ -8,9 +10,8 @@ import javax.annotation.PreDestroy;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * 
- */
+@Data
+@ToString
 public class User implements BeanNameAware {
 
     private String name;
@@ -24,67 +25,6 @@ public class User implements BeanNameAware {
      * 当前 Bean 的名称
      */
     private transient String beanName;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public City getCity() {
-        return city;
-    }
-
-    public void setCity(City city) {
-        this.city = city;
-    }
-
-    public City[] getWorkcities() {
-        return workcities;
-    }
-
-    public void setWorkcities(City[] workcities) {
-        this.workcities = workcities;
-    }
-
-    public List<City> getLifecities() {
-        return lifecities;
-    }
-
-    public void setLifecities(List<City> lifecities) {
-        this.lifecities = lifecities;
-    }
-
-    public Resource getConfigFileLocation() {
-        return configFileLocation;
-    }
-
-    public void setConfigFileLocation(Resource configFileLocation) {
-        this.configFileLocation = configFileLocation;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
-                ", city=" + city +
-                ", workcities=" + Arrays.toString(workcities) +
-                ", lifecities=" + lifecities +
-                ", configFileLocation=" + configFileLocation +
-                ", beanName='" + beanName + '\'' +
-                '}';
-    }
 
     public static User createUser() {
         User user = new User();
