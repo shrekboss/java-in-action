@@ -58,7 +58,7 @@ public class MyInstantiationAwareBeanPostProcessor implements InstantiationAware
             // 如果存在 "description" 属性配置的话
             if (propertyValues.contains("description")) {
                 // PropertyValue value 是不可变的
-//                    PropertyValue propertyValue = propertyValues.getPropertyValue("description");
+                // PropertyValue propertyValue = propertyValues.getPropertyValue("description");
                 propertyValues.removePropertyValue("description");
                 propertyValues.addPropertyValue("description", "postProcessProperties：The user holder V2");
                 System.out.println("InstantiationAwareBeanPostProcessor#postProcessProperties V2");

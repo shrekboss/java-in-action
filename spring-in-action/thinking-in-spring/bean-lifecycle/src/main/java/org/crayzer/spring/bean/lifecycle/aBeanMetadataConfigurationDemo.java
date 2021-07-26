@@ -21,8 +21,6 @@ public class aBeanMetadataConfigurationDemo {
      * {@link BeanFactoryAsIocContainerDemo} 基于 XML 配置方式实现方式
      * <p>
      * 基于 Properties 配置方式实现
-     *
-     * @author yixiu
      **/
     public static void main(String[] args) {
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
