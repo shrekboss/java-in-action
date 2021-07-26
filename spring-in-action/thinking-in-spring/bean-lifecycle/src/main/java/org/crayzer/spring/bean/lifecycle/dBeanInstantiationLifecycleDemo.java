@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  *
  * @author Crayzer
  */
-public class BeanInstantiationLifecycleDemo {
+public class dBeanInstantiationLifecycleDemo {
 
     public static void main(String[] args) {
         // executeBeanFactory();
@@ -48,7 +48,7 @@ public class BeanInstantiationLifecycleDemo {
      * ResourceLoaderAware
      * ApplicationEventPublisherAware
      * MessageSourceAware
-     * ApplicationContext
+     * ApplicationContextAware
      */
     private static void executeApplicationContext() {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext();

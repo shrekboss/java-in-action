@@ -10,6 +10,7 @@ import org.springframework.context.annotation.CommonAnnotationBeanPostProcessor;
  *
  * @author Crayzer
  */
+@Deprecated
 public class BeanInitializationLifecycleDemo {
 
     public static void main(String[] args) {

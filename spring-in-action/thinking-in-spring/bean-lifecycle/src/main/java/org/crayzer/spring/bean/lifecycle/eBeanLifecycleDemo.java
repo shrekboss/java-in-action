@@ -8,7 +8,7 @@ import org.springframework.context.annotation.CommonAnnotationBeanPostProcessor;
 /**
  * @author Crayzer
  */
-public class BeanLifecycleDemo {
+public class eBeanLifecycleDemo {
 
     public static void main(String[] args) throws InterruptedException {
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();

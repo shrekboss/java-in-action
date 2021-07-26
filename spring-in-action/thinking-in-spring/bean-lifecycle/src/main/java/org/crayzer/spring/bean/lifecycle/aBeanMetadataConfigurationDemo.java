@@ -15,7 +15,7 @@ import org.springframework.core.io.support.EncodedResource;
  * @author Crayzer
  */
 @Configuration
-public class BeanMetadataConfigurationDemo {
+public class aBeanMetadataConfigurationDemo {
 
     /**
      * {@link BeanFactoryAsIocContainerDemo} 基于 XML 配置方式实现方式

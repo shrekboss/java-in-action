@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotatedBeanDefinitionReader;
  *
  * @author Crayzer
  */
-public class AnnotatedBeanDefinitionParsingDemo {
+public class bAnnotatedBeanDefinitionParsingDemo {
 
     public static void main(String[] args) {
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
@@ -16,7 +16,7 @@ public class AnnotatedBeanDefinitionParsingDemo {
         AnnotatedBeanDefinitionReader beanDefinitionReader = new AnnotatedBeanDefinitionReader(beanFactory);
         int beanDefinitionCountBefore = beanFactory.getBeanDefinitionCount();
         // 注册当前类（非 @Component class）
-        beanDefinitionReader.register(AnnotatedBeanDefinitionParsingDemo.class);
+        beanDefinitionReader.register(bAnnotatedBeanDefinitionParsingDemo.class);
         int beanDefinitionCountAfter = beanFactory.getBeanDefinitionCount();
         int beanDefinitionCount = beanDefinitionCountAfter - beanDefinitionCountBefore;
         System.out.println("已加载 BeanDefinition 数量：" + beanDefinitionCount);
@@ -24,8 +24,8 @@ public class AnnotatedBeanDefinitionParsingDemo {
         // Bean 名称生成来自于 BeanNameGenerator，注解实现 AnnotationBeanNameGenerator
         // 可以通过继承 BeanNameGenerator 来实现命名方式的替换
         // AnnotatedBeanDefinitionReader.setBeanNameGenerator()
-        AnnotatedBeanDefinitionParsingDemo demo = beanFactory.getBean("annotatedBeanDefinitionParsingDemo",
-                AnnotatedBeanDefinitionParsingDemo.class);
+        bAnnotatedBeanDefinitionParsingDemo demo = beanFactory.getBean("annotatedBeanDefinitionParsingDemo",
+                bAnnotatedBeanDefinitionParsingDemo.class);
         System.out.println(demo);
     }
 }

@@ -10,7 +10,7 @@ import org.springframework.core.io.support.EncodedResource;
 /**
  * @author Crayzer
  */
-public class MergedBeanDefinitionDemo {
+public class cMergedBeanDefinitionDemo {
 
     public static void main(String[] args) {
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
