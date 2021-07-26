@@ -1,4 +1,4 @@
-package org.crayzer.spring.bean.definition;
+package org.crayzer.spring.bean.definition.instantiation;
 
 import org.crayzer.spring.overview.domain.User;
 import org.springframework.beans.factory.BeanFactory;

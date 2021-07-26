@@ -1,4 +1,4 @@
-package org.crayzer.spring.bean.definition;
+package org.crayzer.spring.bean.definition.register;
 
 import org.crayzer.spring.overview.domain.User;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
@@ -54,6 +54,10 @@ public class AnnotationBeanDefinitionDemo {
         applicationContext.close();
     }
 
+    public static void registerUserBeanDefinition(BeanDefinitionRegistry registry) {
+        registerUserBeanDefinition(registry, null);
+    }
+
     public static void registerUserBeanDefinition(BeanDefinitionRegistry registry, String beanName) {
         BeanDefinitionBuilder beanDefinitionBuilder = BeanDefinitionBuilder.genericBeanDefinition(User.class);
         beanDefinitionBuilder
@@ -68,10 +72,6 @@ public class AnnotationBeanDefinitionDemo {
             // 非命名 Bean 注册方法
             BeanDefinitionReaderUtils.registerWithGeneratedName(beanDefinitionBuilder.getBeanDefinition(), registry);
         }
-    }
-
-    public static void registerUserBeanDefinition(BeanDefinitionRegistry registry) {
-        registerUserBeanDefinition(registry, null);
     }
 
     /**

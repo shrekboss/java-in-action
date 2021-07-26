@@ -3,7 +3,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <import resource="dependency-lookup-context.xml"/>
+    <import resource="classpath:/META-INF/dependency-lookup-context.xml"/>
 
     <alias name="user" alias="aUser"/>
 </beans>

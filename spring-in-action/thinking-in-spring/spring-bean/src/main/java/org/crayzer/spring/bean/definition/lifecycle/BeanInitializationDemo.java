@@ -1,4 +1,4 @@
-package org.crayzer.spring.bean.definition;
+package org.crayzer.spring.bean.definition.lifecycle;
 
 import org.crayzer.spring.bean.definition.factory.DefaultUserFactory;
 import org.crayzer.spring.bean.definition.factory.UserFactory;
@@ -26,7 +26,7 @@ import org.springframework.context.annotation.Lazy;
  * <p>
  * 延迟初始化 @Lazy
  * <p>
- * 非延迟初始化在 Spring 应用上下文启动后，被初始化
+ * 延迟初始化在 Spring 应用上下文启动后，第一次被调用的被初始化
  *
  * @author Crayzer
  */
@@ -38,7 +38,7 @@ public class BeanInitializationDemo {
         // 将当前类 BeanInitializationDemo 作为配置类(Configuration class)
         applicationContext.register(BeanInitializationDemo.class);
         applicationContext.refresh();
-        // 非延迟初始化在 Spring 应用上下文启动后，被初始化
+        // 延迟初始化在 Spring 应用上下文启动后，第一次被调用的被初始化
         System.out.println("Spring 应用上下文已启动");
 
         UserFactory userFactory = applicationContext.getBean(UserFactory.class);
@@ -48,8 +48,8 @@ public class BeanInitializationDemo {
     }
 
     @Bean(initMethod = "initUserFactory", destroyMethod = "destroyUserFactory")
-    @Lazy(value = false)
-    // @Lazy
+//    @Lazy(value = false)
+     @Lazy
     public UserFactory userFactory() {
         return new DefaultUserFactory();
     }

@@ -1,4 +1,4 @@
-package org.crayzer.spring.bean.definition;
+package org.crayzer.spring.bean.definition.lifecycle;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
