@@ -107,13 +107,13 @@ public class AnnotationDependencyInjectionResolutionDemo {
         AnnotationDependencyInjectionResolutionDemo demo = applicationContext.getBean(AnnotationDependencyInjectionResolutionDemo.class);
 
         // 期待输出 superUser Bean
-        System.out.println("demo.user = " + demo.user);
-        System.out.println("demo.injectedUser = " + demo.injectedUser);
-        System.out.println("demo.userOptional = " + demo.userOptional);
-        System.out.println("demo.myInjectedUser = " + demo.myInjectedUser);
+        System.err.println("demo.user = " + demo.user);
+        System.err.println("demo.injectedUser = " + demo.injectedUser);
+        System.err.println("demo.userOptional = " + demo.userOptional);
+        System.err.println("demo.myInjectedUser = " + demo.myInjectedUser);
 
         // 期待输出 user superUser
-        System.out.println("demo.users = " + demo.users);
+        System.err.println("demo.users = " + demo.users);
 
         // 显示地关闭 Spring 应用上下文
         applicationContext.close();

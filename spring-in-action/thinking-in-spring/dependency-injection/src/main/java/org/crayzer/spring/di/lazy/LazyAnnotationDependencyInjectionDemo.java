@@ -46,11 +46,11 @@ public class LazyAnnotationDependencyInjectionDemo {
         LazyAnnotationDependencyInjectionDemo demo = applicationContext.getBean(LazyAnnotationDependencyInjectionDemo.class);
 
         // 期待输出 superUser Bean
-        System.out.println("demo.user = " + demo.user);
+        System.err.println("demo.user = " + demo.user);
         // 期待输出 superUser Bean
-        System.out.println("demo.userObjectProvider = " + demo.userObjectProvider.getObject()); // 继承 ObjectFactory
+        System.err.println("demo.userObjectProvider = " + demo.userObjectProvider.getObject()); // 继承 ObjectFactory
         // 期待输出 superUser user Beans
-        System.out.println("demo.usersObjectFactory = " + demo.usersObjectFactory.getObject());
+        System.err.println("demo.usersObjectFactory = " + demo.usersObjectFactory.getObject());
 
         demo.userObjectProvider.forEach(System.out::println);
 

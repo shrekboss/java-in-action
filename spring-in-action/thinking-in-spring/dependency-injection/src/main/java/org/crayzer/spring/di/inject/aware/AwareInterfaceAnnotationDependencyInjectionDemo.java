@@ -1,4 +1,4 @@
-package org.crayzer.spring.di.aware;
+package org.crayzer.spring.di.inject.aware;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.Aware;

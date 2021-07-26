@@ -1,4 +1,4 @@
-package org.crayzer.spring.di.setter.autowiring;
+package org.crayzer.spring.di.inject.setter.autowiring;
 
 import org.crayzer.spring.di.UserHolder;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;

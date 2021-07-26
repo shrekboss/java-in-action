@@ -46,16 +46,19 @@ public class ObjectProviderDemo {
         //     System.out.println(str);
         // }
         objectProvider.stream().forEach(System.out::println);
+        System.out.println("==============================================");
     }
 
     private static void lookupIfAvailable(AnnotationConfigApplicationContext applicationContext) {
         ObjectProvider<User> beanProvider = applicationContext.getBeanProvider(User.class);
         User user = beanProvider.getIfAvailable(User::createUser);
         System.out.println("当前 User 对象：" + user);
+        System.out.println("==============================================");
     }
 
     private static void lookupByBeanProvide(AnnotationConfigApplicationContext applicationContext) {
         ObjectProvider<String> beanProvider = applicationContext.getBeanProvider(String.class);
         System.out.println(beanProvider.getObject());
+        System.out.println("==============================================");
     }
 }

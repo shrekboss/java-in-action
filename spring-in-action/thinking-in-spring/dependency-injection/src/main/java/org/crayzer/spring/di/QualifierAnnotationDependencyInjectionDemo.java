@@ -84,15 +84,15 @@ public class QualifierAnnotationDependencyInjectionDemo {
         QualifierAnnotationDependencyInjectionDemo demo = applicationContext.getBean(QualifierAnnotationDependencyInjectionDemo.class);
 
         // 期待输出 superUser
-        System.out.println("demo.user = " + demo.user);
+        System.err.println("demo.user = " + demo.user);
         // 期待输出 user
-        System.out.println("demo.namedUser = " + demo.namedUser);
+        System.err.println("demo.namedUser = " + demo.namedUser);
         // 期待输出 superUser user user1 user2 user3 user4
-        System.out.println("demo.allUsers = " + demo.allUsers);
+        System.err.println("demo.allUsers = " + demo.allUsers);
         // 期待输出 user1 user2 user3 user4
-        System.out.println("demo.qualifiedUsers = " + demo.qualifiedUsers);
+        System.err.println("demo.qualifiedUsers = " + demo.qualifiedUsers);
         // 期待输出 user3 user4
-        System.out.println("demo.groupedUsers = " + demo.groupedUsers);
+        System.err.println("demo.groupedUsers = " + demo.groupedUsers);
 
 
         // 显示地关闭 Spring 应用上下文

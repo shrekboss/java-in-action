@@ -16,11 +16,11 @@ public class Aop1 {
         
         //环绕通知
         public void around(ProceedingJoinPoint joinPoint) throws Throwable{
-            System.out.println("    ====>around begin ding"); //1
+            System.out.println("    ====> around begin ding"); //1
             //调用process()方法才会真正的执行实际被代理的方法
             joinPoint.proceed();
             
-            System.out.println("    ====>around finish ding"); //3
+            System.out.println("    ====> around finish ding"); //3
         }
         
 }

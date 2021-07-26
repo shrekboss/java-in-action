@@ -1,4 +1,4 @@
-package org.crayzer.spring.di.constructor;
+package org.crayzer.spring.di.inject.constructor;
 
 import org.crayzer.spring.di.UserHolder;
 import org.crayzer.spring.ioc.domain.User;

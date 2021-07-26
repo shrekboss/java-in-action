@@ -1,28 +1,27 @@
-package org.crayzer.spring.di.setter;
+package org.crayzer.spring.di.inject.setter;
 
 import org.crayzer.spring.di.UserHolder;
-import org.springframework.beans.factory.config.BeanDefinition;
-import org.springframework.beans.factory.support.BeanDefinitionBuilder;
+import org.crayzer.spring.ioc.domain.User;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
 
 /**
- * 基于 API 实现依赖 Setter 方法注入示例
+ * 基于 Java 注解的依赖 Setter 方法注入示例
  *
  * @author Crayzer
  */
-public class ApiDependencySetterInjectionDemo {
+public class AnnotationDependencySetterInjectionDemo {
 
     public static void main(String[] args) {
+
         // 创建 BeanFactory 容器
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
-
-        // 生成 UserHolder 的 BeanDefinition
-        BeanDefinition userHolderBeanDefinition = createUserHolderBeanDefinition();
-        // 注册 UserHolder 的 BeanDefinition
-        applicationContext.registerBeanDefinition("userHolder", userHolderBeanDefinition);
+        // 注册 Configuration Class（配置类）
+        applicationContext.register(AnnotationDependencySetterInjectionDemo.class);
 
         XmlBeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(applicationContext);
+
         String xmlResourcePath = "classpath:/META-INF/dependency-lookup-context.xml";
         // 加载 XML 资源，解析并且生成 BeanDefinition
         beanDefinitionReader.loadBeanDefinitions(xmlResourcePath);
@@ -38,9 +37,10 @@ public class ApiDependencySetterInjectionDemo {
         applicationContext.close();
     }
 
-    private static BeanDefinition createUserHolderBeanDefinition() {
-        BeanDefinitionBuilder definitionBuilder = BeanDefinitionBuilder.genericBeanDefinition(UserHolder.class);
-        definitionBuilder.addPropertyReference("user", "superUser");
-        return definitionBuilder.getBeanDefinition();
+    @Bean
+    public UserHolder userHolder(User user) {
+        UserHolder userHolder = new UserHolder();
+        userHolder.setUser(user);
+        return userHolder;
     }
 }
