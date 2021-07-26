@@ -1,6 +1,6 @@
 package org.crayzer.spring.bean.definition;
 
-import org.crayzer.spring.overview.domain.User;
+import org.crayzer.spring.ioc.domain.User;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;

@@ -1,7 +1,7 @@
-package org.crayzer.spring.overview.dependency.lookup;
+package org.crayzer.spring.ioc.dependency.lookup;
 
-import org.crayzer.spring.overview.annotation.Super;
-import org.crayzer.spring.overview.domain.User;
+import org.crayzer.spring.ioc.annotation.Super;
+import org.crayzer.spring.ioc.domain.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.ObjectFactory;

@@ -1,6 +1,6 @@
 package org.crayzer.spring.bean.definition.register;
 
-import org.crayzer.spring.overview.domain.User;
+import org.crayzer.spring.ioc.domain.User;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.BeanDefinitionReaderUtils;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;

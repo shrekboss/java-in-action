@@ -1,7 +1,7 @@
-package org.crayzer.spring.overview.repository;
+package org.crayzer.spring.ioc.repository;
 
 import lombok.Data;
-import org.crayzer.spring.overview.domain.User;
+import org.crayzer.spring.ioc.domain.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.context.ApplicationContext;

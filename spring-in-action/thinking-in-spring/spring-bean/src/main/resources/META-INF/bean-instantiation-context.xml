@@ -3,7 +3,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--  静态方法实例化 Bean  -->
-    <bean id="user-by-static-method" class="org.crayzer.spring.overview.domain.User" factory-method="createUser"/>
+    <bean id="user-by-static-method" class="org.crayzer.spring.ioc.domain.User" factory-method="createUser"/>
     <!--  实例（Bean）方法实例化 Bean  -->
     <bean id="user-by-instance-method" factory-bean="userFactory" factory-method="createUser"/>
     <!--  FactoryBean 实例化 Bean  -->

@@ -1,6 +1,6 @@
 package org.crayzer.spring.bean.definition.factory;
 
-import org.crayzer.spring.overview.domain.User;
+import org.crayzer.spring.ioc.domain.User;
 
 /**
  * @author Crayzer

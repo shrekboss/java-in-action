@@ -1,6 +1,6 @@
 package org.crayzer.spring.bean.definition.instantiation;
 
-import org.crayzer.spring.overview.domain.User;
+import org.crayzer.spring.ioc.domain.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

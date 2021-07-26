@@ -1,7 +1,7 @@
-package org.crayzer.spring.overview.dependency.injection;
+package org.crayzer.spring.ioc.dependency.injection;
 
-import org.crayzer.spring.overview.domain.User;
-import org.crayzer.spring.overview.repository.UserRepository;
+import org.crayzer.spring.ioc.domain.User;
+import org.crayzer.spring.ioc.repository.UserRepository;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.context.ApplicationContext;

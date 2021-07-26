@@ -1,4 +1,4 @@
-package org.crayzer.spring.overview.domain;
+package org.crayzer.spring.ioc.domain;
 
 import lombok.Data;
 import lombok.ToString;
@@ -7,7 +7,6 @@ import org.springframework.core.io.Resource;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import java.util.Arrays;
 import java.util.List;
 
 @Data

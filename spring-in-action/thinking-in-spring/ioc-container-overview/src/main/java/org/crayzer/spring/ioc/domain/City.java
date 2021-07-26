@@ -1,4 +1,4 @@
-package org.crayzer.spring.overview.domain;
+package org.crayzer.spring.ioc.domain;
 
 public enum City {
     SHANGHAI,

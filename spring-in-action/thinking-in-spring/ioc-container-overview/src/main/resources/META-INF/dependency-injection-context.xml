@@ -6,7 +6,7 @@
 
     <import resource="dependency-lookup-context.xml"/>
 
-    <bean id="userRepository" class="org.crayzer.spring.overview.repository.UserRepository"
+    <bean id="userRepository" class="org.crayzer.spring.ioc.repository.UserRepository"
           autowire="byType"> <!-- 2. Auto-wiring -->
         <!-- 1. 手动配置 -->
         <!--        <property name="users">-->

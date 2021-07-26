@@ -1,9 +1,9 @@
-package org.crayzer.spring.overview.domain;
+package org.crayzer.spring.ioc.domain;
 
 
 import lombok.Data;
 import lombok.ToString;
-import org.crayzer.spring.overview.annotation.Super;
+import org.crayzer.spring.ioc.annotation.Super;
 
 /**
  * 

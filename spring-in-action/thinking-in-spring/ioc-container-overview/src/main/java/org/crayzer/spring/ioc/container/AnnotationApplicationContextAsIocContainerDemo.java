@@ -1,6 +1,6 @@
-package org.crayzer.spring.overview.container;
+package org.crayzer.spring.ioc.container;
 
-import org.crayzer.spring.overview.domain.User;
+import org.crayzer.spring.ioc.domain.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.context.ApplicationContext;
