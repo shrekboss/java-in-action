@@ -6,12 +6,11 @@
         <artifactId>thinking-in-spring</artifactId>
         <groupId>org.crayzer</groupId>
         <version>${revision}</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-bean</artifactId>
-    <name>Spring Bean专题</name>
+    <artifactId>dependency-lookup</artifactId>
+    <name>依赖查找专题</name>
 
     <dependencies>
         <dependency>

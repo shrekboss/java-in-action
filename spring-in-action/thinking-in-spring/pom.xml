@@ -14,8 +14,11 @@
     <packaging>pom</packaging>
 
     <modules>
+        <!--  springframework base  -->
         <module>ioc-container-overview</module>
         <module>spring-bean</module>
+        <module>dependency-lookup</module>
+        <module>dependency-injection</module>
     </modules>
 
     <dependencies>
