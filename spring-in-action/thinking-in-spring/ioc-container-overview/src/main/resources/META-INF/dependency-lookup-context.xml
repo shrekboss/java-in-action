@@ -14,9 +14,9 @@
         <property name="id" value="1"/>
         <property name="name" value="crayzer"/>
         <property name="city" value="HANGZHOU"/>
-        <property name="workcities" value="BEIJING,HANGZHOU"/>
+        <property name="workCities" value="BEIJING,HANGZHOU"/>
         <!--        <property name="lifecities" value="HANGZHOU,SHANGHAI"/>-->
-        <property name="lifecities">
+        <property name="lifeCities">
             <list>
                 <value>HANGZHOU</value>
                 <value>SHANGHAI</value>

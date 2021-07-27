@@ -13,8 +13,8 @@ public class User implements BeanNameAware {
     private String name;
     private Long id;
     private City city;
-    private City[] workcities;
-    private List<City> lifecities;
+    private City[] workCities;
+    private List<City> lifeCities;
     private Resource configFileLocation;
 
     /**
@@ -68,20 +68,20 @@ public class User implements BeanNameAware {
         this.city = city;
     }
 
-    public City[] getWorkcities() {
-        return workcities;
+    public City[] getWorkCities() {
+        return workCities;
     }
 
-    public void setWorkcities(City[] workcities) {
-        this.workcities = workcities;
+    public void setWorkCities(City[] workCities) {
+        this.workCities = workCities;
     }
 
-    public List<City> getLifecities() {
-        return lifecities;
+    public List<City> getLifeCities() {
+        return lifeCities;
     }
 
-    public void setLifecities(List<City> lifecities) {
-        this.lifecities = lifecities;
+    public void setLifeCities(List<City> lifeCities) {
+        this.lifeCities = lifeCities;
     }
 
     public Resource getConfigFileLocation() {
@@ -102,8 +102,8 @@ public class User implements BeanNameAware {
                 "name='" + name + '\'' +
                 ", id=" + id +
                 ", city=" + city +
-                ", workcities=" + Arrays.toString(workcities) +
-                ", lifecities=" + lifecities +
+                ", workcities=" + Arrays.toString(workCities) +
+                ", lifecities=" + lifeCities +
                 ", configFileLocation=" + configFileLocation +
                 ", beanName='" + beanName + '\'' +
                 '}';
