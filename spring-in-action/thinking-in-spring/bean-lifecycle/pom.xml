@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>bean-lifecycle</artifactId>
-    <name>Spring Bean生命周期专题</name>
+    <name>Bean生命周期专题</name>
 
     <dependencies>
         <dependency>

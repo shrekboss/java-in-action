@@ -12,7 +12,7 @@
     </parent>
 
     <artifactId>ioc-container-overview</artifactId>
-    <name>Spring IoC容器全览</name>
+    <name>IoC容器全览</name>
 
     <dependencies>
         <dependency>
