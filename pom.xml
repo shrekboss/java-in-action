@@ -14,6 +14,7 @@
         <module>concurrent-in-action</module>
         <module>spring-in-action</module>
         <module>lambda-in-action</module>
+        <module>design-in-action</module>
     </modules>
 
     <packaging>pom</packaging>
