@@ -11,6 +11,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>application-context-lifecycle</artifactId>
-    <name>Application Context专题</name>
+    <name>Application Context生命周期专题</name>
 
 </project>
