@@ -17,7 +17,7 @@ public class LiveBeansViewDemo {
     public static void main(String[] args) throws IOException {
 
         // 添加 LiveBeansView 的 ObjectName 的 domain
-        System.setProperty(MBEAN_DOMAIN_PROPERTY_NAME, "org.geekbang.thinking.in.spring");
+        System.setProperty(MBEAN_DOMAIN_PROPERTY_NAME, "org.crayzer.context.lifecycle");
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
 
@@ -35,6 +35,6 @@ public class LiveBeansViewDemo {
     }
 
     /**
-     * [ { "context": "org.springframework.context.annotation.AnnotationConfigApplicationContext@2f7a2457", "parent": null, "beans": [ { "bean": "liveBeansViewDemo", "aliases": [], "scope": "singleton", "type": "org.geekbang.thinking.in.spring.application.context.lifecycle.LiveBeansViewDemo", "resource": "null", "dependencies": [] }] }]
+     * [ { "context": "org.springframework.context.annotation.AnnotationConfigApplicationContext@2f7a2457", "parent": null, "beans": [ { "bean": "liveBeansViewDemo", "aliases": [], "scope": "singleton", "type": "org.crayzer.context.lifecycle.LiveBeansViewDemo", "resource": "null", "dependencies": [] }] }]
      */
 }
