@@ -46,7 +46,8 @@ public class EnvironmentPropertySourceChangeDemo {
         System.out.println(environmentPropertySourceChangeDemo.userName);
 
         for (PropertySource ps : propertySources) {
-            System.out.printf(" ", ps.getName(), ps.getProperty("user.name"));
+            System.out.printf("PropertySource(name=%s) 'user.name' 属性：%s\n", ps.getName(), ps.getProperty("user.name"));
+
         }
 
         // 关闭 Spring 应用上下文
