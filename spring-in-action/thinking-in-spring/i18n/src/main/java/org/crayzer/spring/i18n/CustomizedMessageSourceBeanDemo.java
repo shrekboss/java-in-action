@@ -1,4 +1,4 @@
-package org.crayzer.i18n;
+package org.crayzer.spring.i18n;
 
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.boot.WebApplicationType;

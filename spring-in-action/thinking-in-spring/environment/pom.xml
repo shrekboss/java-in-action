@@ -11,5 +11,30 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>environment</artifactId>
+    <name>Environment专题</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.crayzer</groupId>
+            <artifactId>ioc-container-overview</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- Testing -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+            <version>${spring.version}</version>
+        </dependency>
+
+
+    </dependencies>
 
 </project>

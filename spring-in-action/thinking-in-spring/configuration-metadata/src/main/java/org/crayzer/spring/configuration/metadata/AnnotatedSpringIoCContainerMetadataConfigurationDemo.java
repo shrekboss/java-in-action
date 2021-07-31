@@ -20,7 +20,7 @@ import java.util.Map;
 public class AnnotatedSpringIoCContainerMetadataConfigurationDemo {
 
     /**
-     * user.name 是 Java Properties 默认存在，当前用户：yizhe.chen，而非配置文件中定义"马克图布"
+     * user.name 是 Java Properties 默认存在，当前用户：XXXX，而非配置文件中定义"马克图布"
      */
     @Bean
     public User configuredUser(@Value("${user.id}") Long id, @Value("${user.name}") String name) {
@@ -39,7 +39,7 @@ public class AnnotatedSpringIoCContainerMetadataConfigurationDemo {
         // beanName 和 bean 映射
         Map<String, User> usersMap = context.getBeansOfType(User.class);
         for (Map.Entry<String, User> entry : usersMap.entrySet()) {
-            System.out.printf("User Bean name : %s , content : %s \n", entry.getKey(), entry.getValue());
+            System.err.printf("User Bean name : %s , content : %s \n", entry.getKey(), entry.getValue());
         }
         // 关闭 Spring 应用上下文
         context.close();

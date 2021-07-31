@@ -18,10 +18,11 @@ public class EncodedFileSystemResourceDemo {
         String currentJavaFilePath = System.getProperty("user.dir") +
                 "/spring-in-action/thinking-in-spring/resource/src/main/java/" +
                 "org/crayzer/spring/resource/EncodedFileSystemResourceDemo.java";
-        // FileSystemResource => WritableResource => Resource
+        /** FileSystemResource => WritableResource => Resource */
         FileSystemResource fileSystemResource = new FileSystemResource(currentJavaFilePath);
         EncodedResource encodedResource = new EncodedResource(fileSystemResource, "UTF-8");
 
+        System.out.println(currentJavaFilePath);
         try(Reader reader = encodedResource.getReader()) {
             System.out.println(IOUtils.toString(reader));
         }

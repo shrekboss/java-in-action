@@ -1,4 +1,4 @@
-package org.crayzer.context.lifecycle;
+package org.crayzer.spring.context.lifecycle;
 
 import org.springframework.context.Lifecycle;
 
