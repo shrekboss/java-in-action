@@ -13,7 +13,8 @@ import org.springframework.stereotype.Component;
  */
 // basePackages() @AliasFor value()
 // value() @AliasFor basePackages()
-@MyComponentScan2(basePackages = "org.crayzer.springspring.annotation") // 指定 Class-Path(s)
+//@MyComponentScan2(basePackages = "org.crayzer.spring.annotation") // 指定 Class-Path(s)
+@MyComponentScan(scanBasePackages = "org.crayzer.spring.annotation") // 指定 Class-Path(s)
 //@ComponentScan(value = "org.crayzer.spring.annotation") // 指定 Class-Path(s)
 public class ComponentScanDemo {
 

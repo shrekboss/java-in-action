@@ -5,8 +5,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 /**
  * Spring 注解属性覆盖示例
  */
-@MyComponentScan2(packages = "org.crayzer.springspring.annotation")
-// @MyComponentScan2.scanBasePackages  <- @MyComponentScan.scanBasePackages 隐性覆盖
+@MyComponentScan2(packages = "org.crayzer.spring.annotation")
+// @MyComponentScan2.scanBasePackages -> @MyComponentScan.scanBasePackages 隐性覆盖
 public class AttributeOverridesDemo {
 
     public static void main(String[] args) {

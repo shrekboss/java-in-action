@@ -25,8 +25,6 @@ public @interface MyComponentScan2 {
 
     /**
      * 与元注解 @MyComponentScan 同名属性
-     *
-     * @return
      */
     String[] scanBasePackages() default {};
 
