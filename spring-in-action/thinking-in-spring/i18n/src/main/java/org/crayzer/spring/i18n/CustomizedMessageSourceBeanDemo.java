@@ -21,11 +21,7 @@ import org.springframework.context.support.ReloadableResourceBundleMessageSource
 @EnableAutoConfiguration
 public class CustomizedMessageSourceBeanDemo { // @Configuration Class
 
-
-    /**
-     * 在 Spring Boot 场景中，Primary Configuration Sources(Classes) 高于 *AutoConfiguration
-     * @return
-     */
+    /** 在 Spring Boot 场景中，Primary Configuration Sources(Classes) 高于 *AutoConfiguration */
     @Bean(AbstractApplicationContext.MESSAGE_SOURCE_BEAN_NAME)
     public MessageSource messageSource() {
         return new ReloadableResourceBundleMessageSource();

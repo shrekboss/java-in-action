@@ -28,10 +28,15 @@ import static java.nio.file.StandardWatchEventKinds.ENTRY_MODIFY;
  * 实现步骤：
  * <p>
  * 1. 定位资源位置（ Properties 文件）
+ * <p>
  * 2. 初始化 Properties 对象
+ * <p>
  * 3. 实现 AbstractMessageSource#resolveCode 方法
+ * <p>
  * 4. 监听资源文件（Java NIO 2 WatchService）
+ * <p>
  * 5. 使用线程池处理文件变化
+ * <p>
  * 6. 重新装载 Properties 对象
  *
  * @see MessageSource
