@@ -1,4 +1,4 @@
-package org.crayzer.spring.annotation;
+package org.crayzer.spring.annotation.enable;
 
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
@@ -11,6 +11,6 @@ import org.springframework.core.type.AnnotationMetadata;
 public class HelloWorldImportSelector implements ImportSelector {
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
-        return new String[]{"org.crayzer.spring.annotation.HelloWorldConfiguration"}; // 导入
+        return new String[]{"org.crayzer.spring.annotation.enable.HelloWorldConfiguration"}; // 导入
     }
 }

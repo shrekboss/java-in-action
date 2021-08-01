@@ -1,4 +1,4 @@
-package org.crayzer.spring.annotation;
+package org.crayzer.spring.annotation.profile;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;

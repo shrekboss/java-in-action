@@ -1,5 +1,6 @@
 package org.crayzer.spring.annotation;
 
+import org.crayzer.spring.annotation.annotation.MyComponentScan2;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

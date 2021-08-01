@@ -1,4 +1,4 @@
-package org.crayzer.spring.annotation;
+package org.crayzer.spring.annotation.annotation;
 
 import org.springframework.stereotype.Component;
 

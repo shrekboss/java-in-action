@@ -1,4 +1,4 @@
-package org.crayzer.spring.annotation;
+package org.crayzer.spring.annotation.enable;
 
 import org.springframework.context.annotation.Import;
 

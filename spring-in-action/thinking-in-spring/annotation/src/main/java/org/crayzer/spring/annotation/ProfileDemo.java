@@ -1,5 +1,6 @@
 package org.crayzer.spring.annotation;
 
+import org.crayzer.spring.annotation.profile.EvenProfileCondition;
 import org.springframework.context.annotation.*;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.Environment;

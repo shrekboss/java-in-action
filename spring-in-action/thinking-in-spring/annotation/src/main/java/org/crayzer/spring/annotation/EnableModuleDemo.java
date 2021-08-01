@@ -1,5 +1,6 @@
 package org.crayzer.spring.annotation;
 
+import org.crayzer.spring.annotation.enable.EnableHelloWorld;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

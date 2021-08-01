@@ -1,5 +1,6 @@
 package org.crayzer.spring.annotation;
 
+import org.crayzer.spring.annotation.annotation.MyComponentScan;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;

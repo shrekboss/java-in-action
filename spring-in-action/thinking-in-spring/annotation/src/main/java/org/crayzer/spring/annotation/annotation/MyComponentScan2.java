@@ -1,4 +1,4 @@
-package org.crayzer.spring.annotation;
+package org.crayzer.spring.annotation.annotation;
 
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.stereotype.Component;
@@ -26,10 +26,10 @@ public @interface MyComponentScan2 {
     /**
      * 与元注解 @MyComponentScan 同名属性
      */
-    String[] scanBasePackages() default {};
+    String[] scanBasePackages() default {}; // 隐式覆盖
 
 
-    @AliasFor("scanBasePackages")
+    @AliasFor("scanBasePackages") // 显示覆盖
     String[] packages() default {}; // packages 覆盖了 scanBasePackages 覆盖了元注解 scanBasePackages
 
 
