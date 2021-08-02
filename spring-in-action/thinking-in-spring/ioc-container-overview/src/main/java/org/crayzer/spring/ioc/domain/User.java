@@ -7,41 +7,39 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Properties;
 
 public class User implements BeanNameAware {
 
-    private String name;
     private Long id;
+
+    private String name;
+
     private City city;
+
     private City[] workCities;
+
     private List<City> lifeCities;
+
     private Resource configFileLocation;
+
+    private Company company;
+
+    private Properties context;
+
+    private String contextAsText;
 
     /**
      * 当前 Bean 的名称
      */
     private transient String beanName;
 
-    public static User createUser() {
-        User user = new User();
-        user.setId(1L);
-        user.setName("crayzer");
-        return user;
+    public Long getId() {
+        return id;
     }
 
-    @PostConstruct
-    public void init() {
-        System.out.println("User Bean [" + beanName + "] @PostConstruct 初始化...");
-    }
-
-    @PreDestroy
-    public void destroy() {
-        System.out.println("User Bean [" + beanName + "] @PreDestroy 销毁中...");
-    }
-
-    @Override
-    public void setBeanName(String name) {
-        this.beanName = name;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -52,20 +50,20 @@ public class User implements BeanNameAware {
         this.name = name;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public City getCity() {
         return city;
     }
 
     public void setCity(City city) {
         this.city = city;
+    }
+
+    public Resource getConfigFileLocation() {
+        return configFileLocation;
+    }
+
+    public void setConfigFileLocation(Resource configFileLocation) {
+        this.configFileLocation = configFileLocation;
     }
 
     public City[] getWorkCities() {
@@ -84,27 +82,64 @@ public class User implements BeanNameAware {
         this.lifeCities = lifeCities;
     }
 
-    public Resource getConfigFileLocation() {
-        return configFileLocation;
+    public Company getCompany() {
+        return company;
     }
 
-    public void setConfigFileLocation(Resource configFileLocation) {
-        this.configFileLocation = configFileLocation;
+    public void setCompany(Company company) {
+        this.company = company;
     }
 
-    public String getBeanName() {
-        return beanName;
+    public static User createUser() {
+        User user = new User();
+        user.setId(1L);
+        user.setName("小马哥");
+        return user;
+    }
+
+    @PostConstruct
+    public void init() {
+        System.out.println("User Bean [" + beanName + "] 初始化...");
+    }
+
+    @PreDestroy
+    public void destroy() {
+        System.out.println("User Bean [" + beanName + "] 销毁中...");
+    }
+
+    @Override
+    public void setBeanName(String name) {
+        this.beanName = name;
+    }
+
+    public Properties getContext() {
+        return context;
+    }
+
+    public void setContext(Properties context) {
+        this.context = context;
+    }
+
+    public String getContextAsText() {
+        return contextAsText;
+    }
+
+    public void setContextAsText(String contextAsText) {
+        this.contextAsText = contextAsText;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", city=" + city +
-                ", workcities=" + Arrays.toString(workCities) +
-                ", lifecities=" + lifeCities +
+                ", workCities=" + Arrays.toString(workCities) +
+                ", lifeCities=" + lifeCities +
                 ", configFileLocation=" + configFileLocation +
+                ", company=" + company +
+                ", context=" + context +
+                ", contextAsText='" + contextAsText + '\'' +
                 ", beanName='" + beanName + '\'' +
                 '}';
     }
