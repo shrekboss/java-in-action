@@ -1,6 +1,5 @@
 package org.crayzer.spring.databinding;
 
-import org.crayzer.spring.ioc.domain.Company;
 import org.crayzer.spring.ioc.domain.User;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.PropertyValues;

@@ -5,8 +5,8 @@ import java.beans.PropertyEditor;
 /**
  * {@link PropertyEditor} 示例
  *
- * @see PropertyEditor
  * @author crayzer
+ * @see PropertyEditor
  */
 public class PropertyEditorDemo {
 

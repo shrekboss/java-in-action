@@ -15,7 +15,7 @@ import java.lang.annotation.*;
 public @interface MyComponentScan2 {
 
     @AliasFor(annotation = MyComponentScan.class, attribute = "scanBasePackages") // 隐性别名
-            String[] basePackages() default {};
+    String[] basePackages() default {};
 
     // @MyComponentScan2.basePackages
     // -> @MyComponentScan.scanBasePackages

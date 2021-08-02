@@ -23,7 +23,7 @@ public class EncodedFileSystemResourceDemo {
         EncodedResource encodedResource = new EncodedResource(fileSystemResource, "UTF-8");
 
         System.out.println(currentJavaFilePath);
-        try(Reader reader = encodedResource.getReader()) {
+        try (Reader reader = encodedResource.getReader()) {
             System.out.println(IOUtils.toString(reader));
         }
     }

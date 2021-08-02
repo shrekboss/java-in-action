@@ -15,19 +15,19 @@ import java.util.stream.Stream;
 /**
  * 自定义 {@link ResourcePatternResolver} 示例
  *
+ * @author crayzer
  * @see ResourcePatternResolver
  * @see PathMatchingResourcePatternResolver
  * @see PathMatcher
  * @since
- *
- * @author crayzer
  */
 public class CustomizedResourcePatternResolverDemo {
     public static void main(String[] args) throws IOException {
         // 读取当前 package 对应的所有的 .java 文件
         // *.java
         String currentPackagePath = "/" + System.getProperty("user.dir") +
-                "/spring-in-action/thinking-in-spring/resource/src/main/java/org/crayzer/spring/resource/";;
+                "/spring-in-action/thinking-in-spring/resource/src/main/java/org/crayzer/spring/resource/";
+        ;
         String locationPattern = currentPackagePath + "*.java";
         PathMatchingResourcePatternResolver resourcePatternResolver =
                 new PathMatchingResourcePatternResolver(new FileSystemResourceLoader());

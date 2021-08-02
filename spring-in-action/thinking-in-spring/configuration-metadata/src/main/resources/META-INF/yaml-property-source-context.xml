@@ -5,9 +5,9 @@
         xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-   <bean id="yamlMap" class="org.springframework.beans.factory.config.YamlMapFactoryBean" >
-       <!-- 关联 user.yaml 配置 -->
-       <property name="resources" value="classpath:/META-INF/user.yaml" />
-   </bean>
+    <bean id="yamlMap" class="org.springframework.beans.factory.config.YamlMapFactoryBean">
+        <!-- 关联 user.yaml 配置 -->
+        <property name="resources" value="classpath:/META-INF/user.yaml"/>
+    </bean>
 
 </beans>

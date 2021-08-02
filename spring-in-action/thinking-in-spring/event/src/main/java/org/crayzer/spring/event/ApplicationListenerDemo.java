@@ -13,10 +13,10 @@ import org.springframework.scheduling.annotation.EnableAsync;
 /**
  * {@link ApplicationListener} 实例
  *
+ * @author crayzer
  * @see ApplicationListener
  * @see EventListener
  * <p>
- * @author crayzer
  */
 @EnableAsync
 public class ApplicationListenerDemo implements ApplicationEventPublisherAware {
@@ -64,7 +64,10 @@ public class ApplicationListenerDemo implements ApplicationEventPublisherAware {
 
     /** Mismatched number of generics specified */
     // static class MyPayloadApplicationEvent extends PayloadApplicationEvent<String> {
-    /** 正确的打开方式，有点坑 */
+
+    /**
+     * 正确的打开方式，有点坑
+     */
     static class MyPayloadApplicationEvent<String> extends PayloadApplicationEvent<String> {
 
         /**

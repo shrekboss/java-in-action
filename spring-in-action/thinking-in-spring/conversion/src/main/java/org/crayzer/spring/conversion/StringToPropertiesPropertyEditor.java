@@ -1,7 +1,6 @@
 package org.crayzer.spring.conversion;
 
 import java.beans.PropertyEditor;
-
 import java.beans.PropertyEditorSupport;
 import java.io.IOException;
 import java.io.StringReader;

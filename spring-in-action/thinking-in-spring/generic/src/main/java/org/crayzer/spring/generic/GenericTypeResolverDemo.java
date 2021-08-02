@@ -12,8 +12,8 @@ import java.util.Map;
 /**
  * {@link GenericTypeResolver} 示例
  *
- * @see GenericTypeResolver
  * @author crayzer
+ * @see GenericTypeResolver
  */
 public class GenericTypeResolverDemo {
 

@@ -38,7 +38,7 @@ public class MessageFormatDemo {
 
         // 重置 Format
         // 根据参数索引来设置 Pattern
-        messageFormat.setFormat(1,new SimpleDateFormat("YYYY-MM-dd HH:mm:ss"));
+        messageFormat.setFormat(1, new SimpleDateFormat("YYYY-MM-dd HH:mm:ss"));
         result = messageFormat.format(new Object[]{planet, new Date(), event});
         System.out.println(result);
     }

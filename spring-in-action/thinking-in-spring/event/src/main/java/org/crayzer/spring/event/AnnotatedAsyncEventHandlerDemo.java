@@ -45,7 +45,9 @@ public class AnnotatedAsyncEventHandlerDemo {
         System.out.printf("[线程 ： %s] onEvent方法监听到事件 : %s\n", Thread.currentThread().getName(), event);
     }
 
-    /** 消除警告：No task executor bean found for async processing: no bean of type TaskExecutor and no bean named 'taskExecutor' either */
+    /**
+     * 消除警告：No task executor bean found for async processing: no bean of type TaskExecutor and no bean named 'taskExecutor' either
+     */
     @Bean
     public Executor taskExecutor() {
         ExecutorService taskExecutor = newSingleThreadExecutor(new CustomizableThreadFactory("my-spring-event-thread-pool-a"));

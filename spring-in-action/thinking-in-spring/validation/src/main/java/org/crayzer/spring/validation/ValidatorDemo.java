@@ -9,8 +9,8 @@ import java.util.Locale;
 /**
  * 自定义 Spring {@link Validator} 示例
  *
- * @see Validator
  * @author crayzer
+ * @see Validator
  */
 public class ValidatorDemo {
 

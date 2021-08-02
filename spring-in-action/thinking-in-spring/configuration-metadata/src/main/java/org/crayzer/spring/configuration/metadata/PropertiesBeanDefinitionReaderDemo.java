@@ -10,6 +10,7 @@ import org.springframework.core.io.support.EncodedResource;
 
 /**
  * {@link PropertiesBeanDefinitionReader} 实例
+ *
  * @author crayzer
  */
 public class PropertiesBeanDefinitionReaderDemo {

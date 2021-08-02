@@ -14,8 +14,9 @@ import java.util.Locale;
 
 /**
  * 错误文案示例
- * @see Errors
+ *
  * @author crayzer
+ * @see Errors
  */
 public class ErrorsMessageDemo {
 

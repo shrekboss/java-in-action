@@ -1,9 +1,6 @@
 package org.crayzer.spring.validation;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.MessageSource;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Validator;
@@ -15,9 +12,10 @@ import javax.validation.constraints.NotNull;
 
 /**
  * Spring Bean Validation 整合示例
+ *
+ * @author crayzer
  * @see Validator
  * @see LocalValidatorFactoryBean
- * @author crayzer
  */
 public class SpringBeanValidationDemo {
 

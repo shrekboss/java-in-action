@@ -7,9 +7,9 @@ import java.util.Observer;
 
 /**
  * {@link Observer} 示例
- * @see Observer
  *
  * @author crayzer
+ * @see Observer
  */
 public class ObserverDemo {
 

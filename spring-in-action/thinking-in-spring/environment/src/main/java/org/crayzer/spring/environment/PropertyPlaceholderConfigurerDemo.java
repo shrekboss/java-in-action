@@ -6,6 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * {@link PropertyPlaceholderConfigurer} 处理属性占位符示例
+ *
  * @see PropertyPlaceholderConfigurer Deprecated, 参考：@see PropertySourcesPlaceholderConfigurer
  */
 @Deprecated
