@@ -11,5 +11,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>validation</artifactId>
+    <name>Validation专题</name>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.crayzer</groupId>
+            <artifactId>ioc-container-overview</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mortbay.jasper</groupId>
+            <artifactId>apache-el</artifactId>
+        </dependency>
+
+    </dependencies>
     
 </project>
