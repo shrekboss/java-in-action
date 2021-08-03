@@ -7,7 +7,6 @@ import org.springframework.core.ResolvableType;
  *
  * @author crayzer
  * @see ResolvableType
- * @since
  */
 public class ResolvableTypeDemo {
 

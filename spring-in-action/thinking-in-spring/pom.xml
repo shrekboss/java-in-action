@@ -36,6 +36,7 @@
         <module>questions</module>
         <!--  springframework AOP  -->
         <module>aop-overview</module>
+        <module>aop-features</module>
     </modules>
 
     <dependencies>

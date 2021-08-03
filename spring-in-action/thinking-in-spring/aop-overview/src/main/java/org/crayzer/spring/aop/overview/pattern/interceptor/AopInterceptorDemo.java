@@ -1,7 +1,7 @@
 package org.crayzer.spring.aop.overview.pattern.interceptor;
 
-import org.crayzer.spring.aop.overview.pattern.DefaultEchoService;
-import org.crayzer.spring.aop.overview.pattern.EchoService;
+import org.crayzer.spring.aop.overview.DefaultEchoService;
+import org.crayzer.spring.aop.overview.EchoService;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

@@ -9,7 +9,6 @@ import java.io.IOException;
 /**
  * Spring Shutdown Hook 线程示例
  *
- * @since
  */
 public class SpringShutdownHookThreadDemo {
 

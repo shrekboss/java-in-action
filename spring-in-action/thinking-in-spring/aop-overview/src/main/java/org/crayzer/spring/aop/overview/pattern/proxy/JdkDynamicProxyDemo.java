@@ -1,8 +1,8 @@
 package org.crayzer.spring.aop.overview.pattern.proxy;
 
-import org.crayzer.spring.aop.overview.pattern.DefaultEchoService;
-import org.crayzer.spring.aop.overview.pattern.EchoService;
-import org.crayzer.spring.aop.overview.pattern.ProxyEchoService;
+import org.crayzer.spring.aop.overview.DefaultEchoService;
+import org.crayzer.spring.aop.overview.EchoService;
+import org.crayzer.spring.aop.overview.ProxyEchoService;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

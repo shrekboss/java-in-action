@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 public class TargetFilterDemo {
 
     public static void main(String[] args) throws ClassNotFoundException {
-        String targetClassName = "org.crayzer.spring.aop.overview.pattern.EchoService";
+        String targetClassName = "org.crayzer.spring.aop.overview.EchoService";
         // 获取当前线程 ClassLoader
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         // 获取目标类

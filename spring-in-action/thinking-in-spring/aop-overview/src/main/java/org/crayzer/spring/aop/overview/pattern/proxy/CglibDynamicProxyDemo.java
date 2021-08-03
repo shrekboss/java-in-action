@@ -1,7 +1,7 @@
 package org.crayzer.spring.aop.overview.pattern.proxy;
 
-import org.crayzer.spring.aop.overview.pattern.DefaultEchoService;
-import org.crayzer.spring.aop.overview.pattern.EchoService;
+import org.crayzer.spring.aop.overview.DefaultEchoService;
+import org.crayzer.spring.aop.overview.EchoService;
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;
 import org.springframework.cglib.proxy.MethodProxy;

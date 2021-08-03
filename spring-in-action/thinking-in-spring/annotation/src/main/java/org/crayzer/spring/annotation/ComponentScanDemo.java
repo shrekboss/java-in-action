@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
  *
  * @see Component
  * @see ComponentScan
- * @since
  */
 // basePackages() @AliasFor value()
 // value() @AliasFor basePackages()

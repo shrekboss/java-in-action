@@ -19,7 +19,6 @@ import java.util.stream.Stream;
  * @see ResourcePatternResolver
  * @see PathMatchingResourcePatternResolver
  * @see PathMatcher
- * @since
  */
 public class CustomizedResourcePatternResolverDemo {
     public static void main(String[] args) throws IOException {

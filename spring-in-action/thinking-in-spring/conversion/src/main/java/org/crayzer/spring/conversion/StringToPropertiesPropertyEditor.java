@@ -10,8 +10,7 @@ import java.util.Properties;
 /**
  * String -> Properties {@link PropertyEditor}
  *
- * @author crayzer
- * @since PropertyEditor
+ * @author crayzer PropertyEditor
  */
 public class StringToPropertiesPropertyEditor extends PropertyEditorSupport implements PropertyEditor {
 

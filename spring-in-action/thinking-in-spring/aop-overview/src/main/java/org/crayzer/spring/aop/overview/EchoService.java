@@ -1,4 +1,4 @@
-package org.crayzer.spring.aop.overview.pattern;
+package org.crayzer.spring.aop.overview;
 
 /**
  * Echo 服务
