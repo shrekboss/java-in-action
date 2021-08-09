@@ -14,9 +14,9 @@ public class AspectXmlConfig {
 
     public Object aroundAnyPublicMethod(ProceedingJoinPoint pjp) throws Throwable {
         Random random = new Random();
-        if (random.nextBoolean()) {
-            throw new RuntimeException("For Purpose from XML configuration.");
-        }
+//        if (random.nextBoolean()) {
+//            throw new RuntimeException("For Purpose from XML configuration.");
+//        }
         System.out.println("@Around any public method : " + pjp.getSignature());
         return pjp.proceed();
     }

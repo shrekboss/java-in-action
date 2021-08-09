@@ -16,5 +16,6 @@ public class EchoServiceMethodInterceptor implements MethodInterceptor {
         Method method = invocation.getMethod();
         System.out.println("拦截 EchoService 的方法：" + method);
         return invocation.proceed();
+//        return null;
     }
 }

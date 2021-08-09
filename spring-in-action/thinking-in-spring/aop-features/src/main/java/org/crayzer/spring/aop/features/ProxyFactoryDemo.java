@@ -15,7 +15,10 @@ public class ProxyFactoryDemo {
         DefaultEchoService defaultEchoService = new DefaultEchoService();
         // 注入目标对象（被代理）
         ProxyFactory proxyFactory = new ProxyFactory(defaultEchoService);
-        proxyFactory.setTargetClass(DefaultEchoService.class);
+
+        // NPE
+//        proxyFactory.setTargetClass(DefaultEchoSer vice.class);
+
         // 添加 Advice 实现 MethodInterceptor < Interceptor < Advice
         proxyFactory.addAdvice(new EchoServiceMethodInterceptor());
         // 获取代理对象

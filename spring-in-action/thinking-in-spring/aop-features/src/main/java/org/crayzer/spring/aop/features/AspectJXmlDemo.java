@@ -15,11 +15,10 @@ public class AspectJXmlDemo {
     public static void main(String[] args) {
 
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("classpath:/META-INF/spring-aop-context.xml");
+                new ClassPathXmlApplicationContext("classpath:/META-INF/spring-aop-xml-context.xml");
 
-//        AspectJXmlDemo aspectJAnnotationDemo = context.getBean(AspectJXmlDemo.class);
+        AspectJXmlDemo aspectJXml = context.getBean("aspectJXmlDemo", AspectJXmlDemo.class);
 
         context.close();
-
     }
 }

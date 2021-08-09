@@ -24,8 +24,10 @@ public class AspectJAnnotationUsingAPIDemo {
         AspectJProxyFactory proxyFactory = new AspectJProxyFactory(cache);
         // 增加 Aspect 配置类
         proxyFactory.addAspect(AspectConfiguration.class);
+
         // 设置暴露代理对象到 AopContext
         proxyFactory.setExposeProxy(true);
+
         proxyFactory.addAdvice(new MethodBeforeAdvice() {
             @Override
             public void before(Method method, Object[] args, Object target) throws Throwable {
