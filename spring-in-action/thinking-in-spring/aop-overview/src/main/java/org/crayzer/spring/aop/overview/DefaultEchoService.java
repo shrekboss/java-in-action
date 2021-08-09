@@ -13,6 +13,7 @@ public class DefaultEchoService implements EchoService {
 
     @Override
     public String echo(String message) {
+        System.out.println("[ECHO] " + message);
         return "[ECHO] " + message;
     }
 }

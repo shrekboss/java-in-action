@@ -17,7 +17,7 @@ public class ProxyFactoryDemo {
         ProxyFactory proxyFactory = new ProxyFactory(defaultEchoService);
 
         // NPE
-//        proxyFactory.setTargetClass(DefaultEchoSer vice.class);
+        // proxyFactory.setTargetClass(DefaultEchoSer vice.class);
 
         // 添加 Advice 实现 MethodInterceptor < Interceptor < Advice
         proxyFactory.addAdvice(new EchoServiceMethodInterceptor());

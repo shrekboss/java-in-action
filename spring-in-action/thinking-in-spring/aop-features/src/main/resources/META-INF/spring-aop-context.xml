@@ -5,32 +5,48 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.springframework.org/schema/aop
         https://www.springframework.org/schema/aop/spring-aop.xsd
-
-
         http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <aop:aspectj-autoproxy/>
 
-    <bean id = "aspectXmlConfig" class="org.crayzer.spring.aop.features.aspect.AspectXmlConfig"/>
+    <bean id="aspectXmlConfig" class="org.crayzer.spring.aop.features.aspect.AspectXmlConfig"/>
 
     <aop:config>
+        <!-- <aop:pointcut id="allPointcut" expression="execution(* * *(..))"/> -->
         <aop:aspect id="AspectXmlConfig" ref="aspectXmlConfig">
             <aop:pointcut id="anyPublicMethod" expression="execution(public * *(..))"/>
+            <!-- 重复定义会重复执行 -->
+            <!-- <aop:around method="aroundAnyPublicMethod" pointcut-ref="anyPublicMethod"/> -->
+            <aop:around method="aroundAnyPublicMethod" pointcut="execution(public * *(..))"/>
             <aop:before method="beforeAnyPublicMethod" pointcut-ref="anyPublicMethod"/>
-            <aop:around method="aroundAnyPublicMethod" pointcut-ref="anyPublicMethod"/>
+            <!--  <aop:before method="beforeAnyPublicMethod" pointcut="execution(public * *(..))"/> -->
+            <aop:after method="finalizeAnyPublicMethod" pointcut-ref="anyPublicMethod"/>
+            <aop:after-returning method="afterAnyPublicMethod" pointcut-ref="anyPublicMethod"/>
+            <aop:after-throwing method="afterThrowingAnyPublicMethod" pointcut-ref="anyPublicMethod"/>
         </aop:aspect>
     </aop:config>
 
-    <bean id="echoService" class="org.crayzer.spring.aop.overview.DefaultEchoService"/>
 
-    <bean id="echoServiceMethodInterceptor" class="org.crayzer.spring.aop.features.interceptor.EchoServiceMethodInterceptor"/>
+    <bean id="echoService" class="org.crayzer.spring.aop.overview.DefaultEchoService">
+        <!-- CGLIB 字节码提升的方式，类同于 @Configuration -->
+        <!--  <aop:scoped-proxy/> -->
+    </bean>
 
-    <bean id = "echoServiceProxyFactoryBean" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <bean id="echoServiceMethodInterceptor"
+          class="org.crayzer.spring.aop.features.interceptor.EchoServiceMethodInterceptor"/>
+
+    <bean id="targetSource" class="org.springframework.aop.target.HotSwappableTargetSource">
+        <constructor-arg ref="echoService"/>
+    </bean>
+
+    <!--  主动动态代理方式，有别于自动动态， 参考：spring-aop-auto-proxy-context.xml  -->
+    <bean id="echoServiceProxyFactoryBean" class="org.springframework.aop.framework.ProxyFactoryBean">
         <property name="targetName" value="echoService"/>
         <property name="interceptorNames">
             <value>echoServiceMethodInterceptor</value>
         </property>
+        <property name="targetSource" ref="targetSource"/>
     </bean>
 
 

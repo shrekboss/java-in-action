@@ -15,11 +15,10 @@ public class AspectJSchemaBasedAutoProxyDemo {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("classpath:/META-INF/spring-aop-auto-proxy-context.xml");
 
-//        context.refresh();
-
         EchoService echoService = context.getBean("echoService", EchoService.class);
 
-        System.out.println(echoService.echo("Hello,World"));
+        echoService.echo("Hello,World");
+//        System.out.println(echoService.echo("Hello,World"));
 
         context.close();
     }

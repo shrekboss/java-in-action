@@ -19,7 +19,8 @@ public class AspectJSchemaBasedPointcutDemo {
 
         EchoService echoService = context.getBean("echoService", EchoService.class);
 
-        System.out.println(echoService.echo("Hello,World"));
+        echoService.echo("Hello,World");
+//        System.out.println(echoService.echo("Hello,World"));
 
         context.close();
     }

@@ -26,7 +26,6 @@ public class PointcutAPIDemo {
 
 
         // 将 Pointcut 适配成 Advisor
-
         DefaultPointcutAdvisor advisor = new DefaultPointcutAdvisor(pointcut, new EchoServiceMethodInterceptor());
 
         DefaultEchoService defaultEchoService = new DefaultEchoService();
