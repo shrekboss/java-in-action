@@ -24,7 +24,8 @@ public class EchoServiceEchoMethodPointcut implements Pointcut {
         return new ClassFilter() {
             @Override
             public boolean matches(Class<?> clazz) {
-                return EchoService.class.isAssignableFrom(clazz); // 凡是 EchoService 接口或者子接口、子类均可
+                // 凡是 EchoService 接口或者子接口、子类均可
+                return EchoService.class.isAssignableFrom(clazz);
             }
         };
     }
@@ -33,7 +34,8 @@ public class EchoServiceEchoMethodPointcut implements Pointcut {
     public MethodMatcher getMethodMatcher() {
         return new MethodMatcher() {
             @Override
-            public boolean matches(Method method, Class<?> targetClass) { // echo(String)
+            public boolean matches(Method method, Class<?> targetClass) {
+                // echo(String)
                 return "echo".equals(method.getName()) &&
                         method.getParameterTypes().length == 1 &&
                         Objects.equals(String.class, method.getParameterTypes()[0]);

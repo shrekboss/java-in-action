@@ -42,6 +42,6 @@ public class CglibDynamicProxyDemo {
         // 创建代理对象
         EchoService echoService = (EchoService) enhancer.create();
         // 输出执行结果
-        System.out.println(echoService.echo("Hello,World"));
+        echoService.echo("Hello,World");
     }
 }

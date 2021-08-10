@@ -23,6 +23,6 @@ public class ProxyFactoryDemo {
         proxyFactory.addAdvice(new EchoServiceMethodInterceptor());
         // 获取代理对象
         EchoService echoService = (EchoService) proxyFactory.getProxy();
-        System.out.println(echoService.echo("Hello,World"));
+        echoService.echo("Hello,World");
     }
 }

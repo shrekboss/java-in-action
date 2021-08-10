@@ -24,7 +24,6 @@ public class PointcutAPIDemo {
         pointcut.intersection(echoServicePointcut.getClassFilter());
         pointcut.intersection(echoServicePointcut.getMethodMatcher());
 
-
         // 将 Pointcut 适配成 Advisor
         DefaultPointcutAdvisor advisor = new DefaultPointcutAdvisor(pointcut, new EchoServiceMethodInterceptor());
 
@@ -35,6 +34,6 @@ public class PointcutAPIDemo {
 
         // 获取代理对象
         EchoService echoService = (EchoService) proxyFactory.getProxy();
-        System.out.println(echoService.echo("Hello,World"));
+        echoService.echo("Hello,World");
     }
 }
