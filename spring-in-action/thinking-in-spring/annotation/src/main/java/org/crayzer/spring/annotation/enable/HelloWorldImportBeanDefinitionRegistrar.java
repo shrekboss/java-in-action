@@ -8,11 +8,10 @@ import org.springframework.core.type.AnnotationMetadata;
 
 /**
  * "HelloWorld" 模块 {@link ImportBeanDefinitionRegistrar}
- *
- * @see ImportBeanDefinitionRegistrar
  */
 public class HelloWorldImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegistrar {
 
+    @Override
     public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata,
                                         BeanDefinitionRegistry registry) {
         AnnotatedGenericBeanDefinition beanDefinition = new AnnotatedGenericBeanDefinition(HelloWorldConfiguration.class);
