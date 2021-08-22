@@ -16,7 +16,7 @@
 
     <modules>
         <module>thinking-in-spring</module>
-        <module>spring-demo</module>
+        <module>req-param-validate</module>
     </modules>
 
 </project>
