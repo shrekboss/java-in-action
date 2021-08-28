@@ -11,7 +11,7 @@ import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.*;
 
 /**
- * @author yizhe.chen
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  */
 public class StreamApiDemo {
 

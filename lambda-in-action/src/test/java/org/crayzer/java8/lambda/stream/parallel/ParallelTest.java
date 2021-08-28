@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
 
 /**
- * @author yizhe.chen
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  */
 @Log
 public class ParallelTest {

@@ -3,7 +3,7 @@ package org.crayzer.java8.collection.map;
 import java.util.HashMap;
 
 /**
- * @author yizhe.chen
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  */
 public class MapDemo extends HashMap<String, String>{
 

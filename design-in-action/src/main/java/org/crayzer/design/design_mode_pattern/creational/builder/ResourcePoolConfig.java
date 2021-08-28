@@ -5,7 +5,7 @@ import lombok.Data;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * @author yizhe.chen
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  */
 @Data
 public class ResourcePoolConfig {

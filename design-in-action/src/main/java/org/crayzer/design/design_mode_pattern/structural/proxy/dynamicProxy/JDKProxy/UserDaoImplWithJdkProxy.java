@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * @author yizhe.chen
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  */
 public class UserDaoImplWithJdkProxy implements InvocationHandler {
     private IUserDao target;

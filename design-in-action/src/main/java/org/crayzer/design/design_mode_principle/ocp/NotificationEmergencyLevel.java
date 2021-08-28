@@ -1,7 +1,7 @@
 package org.crayzer.design.design_mode_principle.ocp;
 
 /**
- * @author yizhe.chen
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  */
 public enum NotificationEmergencyLevel {
 

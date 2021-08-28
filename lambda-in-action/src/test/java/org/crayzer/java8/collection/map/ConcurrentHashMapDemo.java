@@ -3,7 +3,7 @@ package org.crayzer.java8.collection.map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author yizhe.chen
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  */
 public class ConcurrentHashMapDemo {
     public static void main(String[] args) {

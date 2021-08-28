@@ -1,7 +1,7 @@
 package org.crayzer.java8.lambda.stream.api;
 
 /**
- * @author yizhe.chen
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  */
 public enum CaloricLevel {
     /**

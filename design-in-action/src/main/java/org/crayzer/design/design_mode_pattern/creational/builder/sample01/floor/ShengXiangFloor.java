@@ -5,7 +5,7 @@ import org.crayzer.design.design_mode_pattern.creational.builder.sample01.Matter
 import java.math.BigDecimal;
 
 /**
- * @author yizhe.chen
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  */
 public class ShengXiangFloor implements Matter {
     @Override
