@@ -40,15 +40,19 @@ public class AnnotationInheritanceApplication {
 
         Child child = new Child();
         // Spring 提供了 AnnotatedElementUtils 类，区别 findXXX 和 getXXX。
-        log.info("ChildClass: getMergedAnnotation {}", getAnnotationValue(AnnotatedElementUtils
-                .getMergedAnnotation(child.getClass(), MyAnnotation.class)));
-        log.info("ChildMethod: getMergedAnnotation {}", getAnnotationValue(AnnotatedElementUtils
-                .getMergedAnnotation(child.getClass().getMethod("foo"), MyAnnotation.class)));
+        log.info("ChildClass: getMergedAnnotation {}", getAnnotationValue(
+                AnnotatedElementUtils.getMergedAnnotation(child.getClass(),
+                        MyAnnotation.class)));
+        log.info("ChildMethod: getMergedAnnotation {}", getAnnotationValue(
+                AnnotatedElementUtils.getMergedAnnotation(child.getClass().getMethod("foo"),
+                        MyAnnotation.class)));
 
-        log.info("ChildClass: findMergedAnnotation {}", getAnnotationValue(AnnotatedElementUtils
-                .findMergedAnnotation(child.getClass(), MyAnnotation.class)));
-        log.info("ChildMethod: findMergedAnnotation {}", getAnnotationValue(AnnotatedElementUtils
-                .findMergedAnnotation(child.getClass().getMethod("foo"), MyAnnotation.class)));
+        log.info("ChildClass: findMergedAnnotation {}", getAnnotationValue(
+                AnnotatedElementUtils.findMergedAnnotation(child.getClass(),
+                        MyAnnotation.class)));
+        log.info("ChildMethod: findMergedAnnotation {}", getAnnotationValue(
+                AnnotatedElementUtils.findMergedAnnotation(child.getClass().getMethod("foo"),
+                        MyAnnotation.class)));
     }
 
     @MyAnnotation(value = "Class")
