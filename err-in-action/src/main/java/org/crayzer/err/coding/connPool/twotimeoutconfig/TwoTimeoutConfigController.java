@@ -39,7 +39,7 @@ public class TwoTimeoutConfigController {
     private JdbcTemplate jdbcTemplate;
 
     /**
-     * http://localhost:45678/twotimeoutconfig/mysql
+     * curl http://localhost:45678/twotimeoutconfig/mysql
      */
     @GetMapping("mysql")
     public String mysql() {
@@ -48,7 +48,7 @@ public class TwoTimeoutConfigController {
     }
 
     /**
-     * http://localhost:45678/twotimeoutconfig/redis
+     * curl http://localhost:45678/twotimeoutconfig/redis
      */
     @GetMapping("redis")
     public String redis() {
@@ -64,7 +64,7 @@ public class TwoTimeoutConfigController {
     }
 
     /**
-     * http://localhost:45678/twotimeoutconfig/http
+     * curl http://localhost:45678/twotimeoutconfig/http
      */
     @GetMapping("http")
     public String http() {
