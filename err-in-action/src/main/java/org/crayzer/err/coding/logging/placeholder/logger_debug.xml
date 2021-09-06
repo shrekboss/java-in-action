@@ -6,8 +6,6 @@
         </layout>
     </appender>
 
-    <logger name="org.crayzer.err.coding.logging" level="DEBUG"/>
-
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
     </root>
