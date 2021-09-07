@@ -11,6 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
+    /**
+     * TestAspectWithOrder10 @Around before
+     * TestAspectWithOrder10 @Before
+     * TestAspectWithOrder20 @Around before
+     * TestAspectWithOrder20 @Before
+     * TestAspectWithOrder20 @Around after
+     * TestAspectWithOrder20 @After
+     * TestAspectWithOrder10 @Around after
+     * TestAspectWithOrder10 @After
+     * <p/>
+     * curl http://localhost:45678/test/
+     */
     @GetMapping
     public void test() {
 
