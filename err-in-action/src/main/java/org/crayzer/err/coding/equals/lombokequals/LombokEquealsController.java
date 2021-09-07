@@ -13,7 +13,7 @@ public class LombokEquealsController {
 
     @GetMapping("test1")
     public void test1() {
-        Person person1 = new Person("zhuye", "001");
+        Person person1 = new Person("crayzer", "001");
         Person person2 = new Person("Joseph", "001");
         // false
         // true @EqualsAndHashCode.Exclude name
@@ -22,7 +22,7 @@ public class LombokEquealsController {
 
     @GetMapping("test2")
     public void test2() {
-        Employee employee1 = new Employee("zhuye", "001", "bkjk.com");
+        Employee employee1 = new Employee("crayzer", "001", "bkjk.com");
         Employee employee2 = new Employee("Joseph", "002", "bkjk.com");
         // false
         // true @EqualsAndHashCode(callSuper = true)

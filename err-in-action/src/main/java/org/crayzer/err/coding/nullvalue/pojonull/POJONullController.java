@@ -36,23 +36,23 @@ public class POJONullController {
         User user = userRepository.findById(1L).orElse(null);
         if (user != null) {
             user.setAge(36);
-            user.setName("zhuye");
+            user.setName("crayzer");
         } else {
             user.setId(1L);
             user.setAge(36);
-            user.setName("zhuye");
+            user.setName("crayzer");
         }
         userRepository.save(user);
 
         UserEntity userEntity = userEntityRepository.findById(1L).orElse(null);
         if (userEntity != null) {
             userEntity.setAge(36);
-            userEntity.setName("zhuye");
-            userEntity.setNickname("guestzhuye");
+            userEntity.setName("crayzer");
+            userEntity.setNickname("guestcrayzer");
         } else {
             user.setId(1L);
             user.setAge(36);
-            user.setName("zhuye");
+            user.setName("crayzer");
         }
         userEntityRepository.save(userEntity);
     }
