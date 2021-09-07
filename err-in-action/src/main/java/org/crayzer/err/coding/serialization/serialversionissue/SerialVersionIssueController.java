@@ -26,7 +26,7 @@ public class SerialVersionIssueController {
     @GetMapping("write")
     public User write() throws IOException {
         User userSource = new User();
-        userSource.setName("zhuye");
+        userSource.setName("crayzer");
         writeObject(userSource);
         return userSource;
     }

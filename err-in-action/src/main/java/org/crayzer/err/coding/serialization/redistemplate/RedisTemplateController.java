@@ -37,10 +37,13 @@ public class RedisTemplateController {
 
     /**
      * curl http://localhost:45678/redistemplate/wrong
+     * <p/>
+     * redisTemplate get null
+     * <p/>
+     * stringRedisTemplate get null
+     * <p/>
+     * redisTemplate & stringRedisTemplate 两者的默认的序列化方式不同
      */
-    // - redisTemplate get null
-    // - stringRedisTemplate get null
-    // redisTemplate & stringRedisTemplate 两者的默认的序列化方式不同
     @GetMapping("wrong")
     public void wrong() {
         log.info("redisTemplate get {}", redisTemplate.opsForValue().get("stringRedisTemplate"));
@@ -49,9 +52,11 @@ public class RedisTemplateController {
 
     /**
      * curl http://localhost:45678/redistemplate/right
+     * <p/>
+     * redisTemplate get User(name=crayzer, age=36)
+     * <p/>
+     * stringRedisTemplate get User(name=crayzer, age=36)
      */
-    // - redisTemplate get User(name=crayzer, age=36)
-    // - stringRedisTemplate get User(name=crayzer, age=36)
     @GetMapping("right")
     public void right() throws JsonProcessingException {
         //使用RedisTemplate获取Value，无需反序列化就可以拿到实际对象，虽然方便，但是Redis中保存的Key和Value不易读
@@ -64,10 +69,13 @@ public class RedisTemplateController {
 
     /**
      * curl http://localhost:45678/redistemplate/right2
+     * <p/>
+     * userRedisTemplate get {name=crayzer, age=36} class java.util.LinkedHashMap
+     * <p/>
+     * stringRedisTemplate get {"name":"crayzer","age":36}
+     * <p/>
+     * redis-cli: get crayzer
      */
-    // [14:07:41.315] [http-nio-45678-exec-1] [INFO ] [.t.c.s.demo1.RedisTemplateController:55  ] - userRedisTemplate get {name=crayzer, age=36} class java.util.LinkedHashMap
-    // [14:07:41.318] [http-nio-45678-exec-1] [INFO ] [.t.c.s.demo1.RedisTemplateController:56  ] - stringRedisTemplate get {"name":"crayzer","age":36}
-    // redis-cli: get crayzer
     @GetMapping("right2")
     public void right2() {
         User user = new User("crayzer", 36);
@@ -81,10 +89,13 @@ public class RedisTemplateController {
 
     /**
      * curl http://localhost:45678/redistemplate/right3
+     * <p/>
+     * userRedisTemplate get User(name=crayzer, age=36) class org.crayzer.err.coding.serialization.redistemplate.User
+     * <p/>
+     * stringRedisTemplate get {"@class":"org.crayzer.err.coding.serialization.redistemplate.User","name":"crayzer","age":36}
+     * <p/>
+     * redis-cli: get crayzer
      */
-// - userRedisTemplate get User(name=crayzer, age=36) class org.crayzer.err.coding.serialization.redistemplate.User
-// - stringRedisTemplate get {"@class":"org.crayzer.err.coding.serialization.redistemplate.User","name":"crayzer","age":36}
-// redis-cli: get crayzer
     @GetMapping("right3")
     public void right3() {
         User user = new User("crayzer", 36);
@@ -96,6 +107,14 @@ public class RedisTemplateController {
 
     /**
      * curl http://localhost:45678/redistemplate/wrong2
+     * <p/>
+     * 用 RedisTemplate<String, Long> 不一定就代表获取的到的 Value 是 Long
+     * <p/>
+     * 1 false
+     * <p/>
+     * 2147483648 true
+     * <p/>
+     * 1 2147483648
      */
     @GetMapping("wrong2")
     public void wrong2() {
