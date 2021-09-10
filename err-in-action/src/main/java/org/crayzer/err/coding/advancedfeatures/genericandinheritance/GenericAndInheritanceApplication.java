@@ -27,8 +27,8 @@ public class GenericAndInheritanceApplication {
     // Parent.setValue called
     // Parent.setValue called
     // value: test updateCount: 2
-
     // getMethods 方法找到了两个名为 setValue 的方法，分别是父类和子类的 setValue 方法
+    // getMethods 能获得当前类和父类的所有public方法
     public static void wrong1() {
         Child1 child1 = new Child1();
         Arrays.stream(child1.getClass().getMethods())
@@ -46,8 +46,8 @@ public class GenericAndInheritanceApplication {
     // Child1.setValue called
     // Parent.setValue called
     // value: test updateCount: 1
-
     // 虽然能解决重复记录日志的问题，但没有解决子类方法重写父类方法失败的问题
+    // getDeclaredMethods 仅获得当前类所有的 public、protected、package 和 private 方法
     public static void wrong2() {
         Child1 child1 = new Child1();
         Arrays.stream(child1.getClass().getDeclaredMethods())
@@ -67,7 +67,6 @@ public class GenericAndInheritanceApplication {
     // Child2.setValue called
     // Parent.setValue called
     // value: test updateCount: 2
-
     // 不通过反射来调用方法，很难发现这个问题。其实，这就是泛型类型擦除导致的问题
     public static void wrong3() {
         Child2 child2 = new Child2();
@@ -131,7 +130,7 @@ class Parent<T> {
  */
 class Child1 extends Parent {
 
-//     @Override
+    //     @Override
     public void setValue(String value) {
         System.out.println("Child1.setValue called");
         super.setValue(value);

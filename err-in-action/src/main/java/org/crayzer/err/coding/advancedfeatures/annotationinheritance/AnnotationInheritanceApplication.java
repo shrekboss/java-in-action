@@ -22,19 +22,22 @@ public class AnnotationInheritanceApplication {
 
     public static void wrong() throws NoSuchMethodException {
         Parent parent = new Parent();
-        log.info("ParentClass:{}", getAnnotationValue(parent.getClass().getAnnotation(MyAnnotation.class)));
+        log.info("ParentClass:{}", getAnnotationValue(parent.getClass()
+                .getAnnotation(MyAnnotation.class)));
         log.info("ParentMethod:{}", getAnnotationValue(parent.getClass().getMethod("foo")
                 .getAnnotation(MyAnnotation.class)));
 
         Child child = new Child();
-        log.info("ChildClass:{}", getAnnotationValue(child.getClass().getAnnotation(MyAnnotation.class)));
+        log.info("ChildClass:{}", getAnnotationValue(child.getClass()
+                .getAnnotation(MyAnnotation.class)));
         log.info("ChildMethod:{}", getAnnotationValue(child.getClass().getMethod("foo")
                 .getAnnotation(MyAnnotation.class)));
     }
 
     public static void right() throws NoSuchMethodException {
         Parent parent = new Parent();
-        log.info("ParentClass:{}", getAnnotationValue(parent.getClass().getAnnotation(MyAnnotation.class)));
+        log.info("ParentClass:{}", getAnnotationValue(parent.getClass()
+                .getAnnotation(MyAnnotation.class)));
         log.info("ParentMethod:{}", getAnnotationValue(parent.getClass().getMethod("foo")
                 .getAnnotation(MyAnnotation.class)));
 
