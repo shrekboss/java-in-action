@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * package: org.crayzer.springmvc.best.practice
  * describe: 用于展示Spring应用的最佳实践
  *
- * @author yixiu
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  **/
 @SpringBootApplication
 public class Application {

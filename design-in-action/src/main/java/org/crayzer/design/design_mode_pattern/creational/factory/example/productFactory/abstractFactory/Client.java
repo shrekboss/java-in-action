@@ -24,9 +24,7 @@ package org.crayzer.design.design_mode_pattern.creational.factory.example.produc
  *          产品族：在抽象工厂模式中，产品族是指由同一个工厂生产的，位于不同产品等级结构中的一组产品，如海尔电器工厂生产的海尔电
  *                 视机、海尔电冰箱，海尔电视机位于电视机产品等级结构中，海尔电冰箱位于电冰箱产品等级结构中。
  * </p>
- * author: yizhe.chen
- * create_date: 2018/5/7
- * create_time: 上午11:21
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  **/
 public class Client {
     public static void main(String[] args) {

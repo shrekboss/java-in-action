@@ -20,9 +20,7 @@ import org.crayzer.design.design_mode_pattern.creational.factory.example.product
  *          由于考虑到系统的可扩展性，需要引入抽象层，在客户端代码中均使用抽象层进行定义，增加了系统的抽象性和理解难度，且在实现时可能需要用到DOM、反射等技术，增加了系统的实现难度。
  *
  * </p>
- * author: yizhe.chen
- * create_date: 2018/5/7
- * create_time: 上午11:16
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  **/
 public class Client {
     public static void main(String[] args) {

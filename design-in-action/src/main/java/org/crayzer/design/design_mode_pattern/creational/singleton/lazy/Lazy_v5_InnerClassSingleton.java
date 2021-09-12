@@ -14,9 +14,7 @@ import java.lang.reflect.Constructor;
  *          比较完美的一种懒加载单例实现方法
  *
  * </p>
- * author: yizhe.chen
- * create_date: 2018/5/6
- * create_time: 下午10:45
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  **/
 public class Lazy_v5_InnerClassSingleton {
 

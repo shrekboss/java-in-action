@@ -16,9 +16,7 @@ import java.util.concurrent.CountDownLatch;
  *     中，对于已经登记过的单例，则从工厂直接返回，对于没有登记的，则先登记，而后
  *     返回
  * </p>
- * author: yizhe.chen
- * create_date: 2018/5/6
- * create_time: 下午10:45
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  **/
 public class RegisterSingleton {
     private static Map<String, RegisterSingleton> registerSingletonMap = new ConcurrentHashMap<>();

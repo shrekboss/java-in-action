@@ -19,9 +19,7 @@ import org.crayzer.design.design_mode_pattern.creational.factory.example.product
  *          系统扩展困难，一旦添加新产品就不得不修改工厂逻辑，在产品类型较多时，有可能造成工厂逻辑过于复杂，不利于系统的扩展和维护。
  *          简单工厂模式由于使用了静态工厂方法，造成工厂角色无法形成基于继承的等级结构。
  * </p>
- * author: yizhe.chen
- * create_date: 2018/5/7
- * create_time: 上午11:16
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  **/
 public class Client {
     public static void main(String[] args) {

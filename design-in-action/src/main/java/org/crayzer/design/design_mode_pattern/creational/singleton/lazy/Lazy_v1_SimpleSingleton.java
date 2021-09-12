@@ -12,9 +12,7 @@ package org.crayzer.design.design_mode_pattern.creational.singleton.lazy;
  *          1.线程不安全
  *          2.执行该类的其他静态方法或者加载了该类（class.forName)，那么这个实例仍然初始化
  * </p>
- * author: yizhe.chen
- * create_date: 2018/5/6
- * create_time: 下午10:45
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  **/
 public class Lazy_v1_SimpleSingleton {
     private static Lazy_v1_SimpleSingleton instance;

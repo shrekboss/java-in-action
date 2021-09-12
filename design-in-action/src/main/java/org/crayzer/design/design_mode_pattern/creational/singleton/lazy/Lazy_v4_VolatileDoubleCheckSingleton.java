@@ -13,9 +13,7 @@ package org.crayzer.design.design_mode_pattern.creational.singleton.lazy;
  *          1.执行该类的其他静态方法或者加载了该类（class.forName)，那么这个实例仍然初始化
  *          2.禁止指令重排 导致性能下降
  * </p>
- * author: yizhe.chen
- * create_date: 2018/5/6
- * create_time: 下午10:45
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  **/
 public class Lazy_v4_VolatileDoubleCheckSingleton {
     /** volatile关键字的一个作用是禁止指令重排，把instance声明为volatile之后，对它的写操作就会有一个内存屏障 */

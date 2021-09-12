@@ -15,9 +15,7 @@ import java.util.concurrent.CountDownLatch;
  *          1.资源效率不高，可能getInstance()永远不会执行到
  *          2.执行该类的其他静态方法或者加载了该类（class.forName)，那么这个实例仍然初始化
  * </p>
- * author: yizhe.chen
- * create_date: 2018/5/6
- * create_time: 下午10:45
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  **/
 public class HungrySingleton {
 

@@ -34,7 +34,7 @@ public class SwaggerConfig {
                 .title("Spring最佳实践")
                 .description("本项目展示 springmvc controller 参数校验最佳实践")
                 .contact(
-                        new Contact("yixiu", null, "yixiu@dtstack.com")
+                        new Contact("crayzer", null, "crayzer.chen@gmail.com")
                 )
                 .version("1.0.0")
                 .build();

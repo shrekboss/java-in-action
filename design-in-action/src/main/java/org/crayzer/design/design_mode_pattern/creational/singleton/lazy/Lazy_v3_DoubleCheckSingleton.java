@@ -31,9 +31,7 @@ import org.crayzer.design.design_mode_pattern.creational.singleton.hungry.Hungry
  *                  b. org.crayzer.demo.singleton.lazy.Lazy_v5_InnerClassSingleton 可以指令重排序，但是不让外部看见
  *
  * </p>
- * author: yizhe.chen
- * create_date: 2018/5/6
- * create_time: 下午10:45
+ * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  **/
 public class Lazy_v3_DoubleCheckSingleton {
     private static Lazy_v3_DoubleCheckSingleton instance;

@@ -21,7 +21,7 @@ public class StreamApiDemo {
     }
 
     /**
-     * @author yixiu
+     * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
      * <p>
      * 筛选出卡路里小于400的菜肴
      * 对筛选出的菜肴进行一个排序
