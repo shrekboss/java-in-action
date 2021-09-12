@@ -43,10 +43,10 @@
         <lombok.version>1.18.18</lombok.version>
         <slf4j.version>1.7.30</slf4j.version>
         <guava.version>29.0-jre</guava.version>
-        <commons-lang3.version>3.8.1</commons-lang3.version>
+        <commons-lang3.version>3.9</commons-lang3.version>
         <swagger.version>2.9.2</swagger.version>
 
-               <!-- Testing 版本 -->
+        <!-- Testing 版本 -->
         <junit.version>4.13</junit.version>
     </properties>
 
@@ -164,6 +164,11 @@
                 <version>${spring.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
             <dependency>
                 <groupId>cglib</groupId>
                 <artifactId>cglib</artifactId>
