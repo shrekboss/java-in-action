@@ -8,6 +8,10 @@ import java.util.Optional;
 public class Address {
     private Country country;
 
+    public Country getCountry1() {
+        return this.country;
+    }
+
     public Optional<Country> getCountry() {
         return Optional.ofNullable(country);
     }

@@ -8,11 +8,10 @@ import java.util.Optional;
 public class User {
 
     private String email;
+    private String name;
     private String password;
     private String position;
     private Address address;
-
-
 
     public User() {
     }
@@ -46,6 +45,10 @@ public class User {
         this.position = position;
     }
 
+    public Address getAddress1() {
+        return address;
+    }
+
     public Optional<Address> getAddress() {
         return Optional.ofNullable(address);
     }
@@ -54,12 +57,22 @@ public class User {
         this.address = address;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "email='" + email + '\'' +
+                ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
                 ", position='" + position + '\'' +
+                ", address=" + address +
                 '}';
     }
 }

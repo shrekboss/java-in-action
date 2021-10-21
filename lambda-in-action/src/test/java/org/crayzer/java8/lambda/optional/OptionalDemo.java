@@ -24,6 +24,10 @@ public class OptionalDemo {
         emptyOpt.get();
     }
 
+    /**
+     * <p>of value 为 null 时，会报 NPE
+     * <p>ofNullable 不会 throw exception，直接返回 Optional.empty();
+     */
     @Test(expected = NullPointerException.class)
     public void whenCreateOfEmptyOptional_thenNullPointerException() {
         User user = null;
@@ -183,4 +187,25 @@ public class OptionalDemo {
         //通过orElseThrow实现无数据时抛出异常
         Optional.empty().orElseThrow(IllegalArgumentException::new);
     }
+
+//   以前写法
+//    public String getCity(User user)  throws Exception{
+//        if(user!=null){
+//            if(user.getAddress()!=null){
+//                Address address = user.getAddress();
+//                if(address.getCity()!=null){
+//                    return address.getCity();
+//                }
+//            }
+//        }
+//        throw new Excpetion("取值错误");
+//    }
+
+    // Java8 写法
+//    public String getCity(User user) throws Exception{
+//        return Optional.ofNullable(user)
+//                .map(u-> u.getAddress())
+//                .map(a->a.getCity())
+//                .orElseThrow(()->new Exception("取指错误"));
+//    }
 }
