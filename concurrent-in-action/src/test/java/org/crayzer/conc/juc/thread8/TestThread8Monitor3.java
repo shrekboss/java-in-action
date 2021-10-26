@@ -1,19 +1,18 @@
-package org.crayzer.conc.juc.testcase.thread8;
+package org.crayzer.conc.juc.thread8;
 
 import org.junit.Test;
 
 /**
- * 两个普通同步方法，两个 Number 对象，打印?  //two  one
+ * 新增普通方法 getThree() , 打印? //three  one   two
  *
  * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  * @since 1.0.0
  */
-public class TestThread8Monitor4 {
+public class TestThread8Monitor3 {
 
     @Test
     public void thread8MonitorTest() {
-        Number4 number = new Number4();
-        Number4 number2 = new Number4();
+        Number3 number = new Number3();
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -23,13 +22,19 @@ public class TestThread8Monitor4 {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                number2.getTwo();
+                number.getTwo();
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                number.getThree();
             }
         }).start();
     }
 }
 
-class Number4 {
+class Number3 {
     public synchronized void getOne() {
         try {
             Thread.sleep(3000);
@@ -40,5 +45,10 @@ class Number4 {
 
     public synchronized void getTwo() {
         System.out.println("two");
+    }
+
+    //普通方法
+    public void getThree() {
+        System.out.println("three");
     }
 }

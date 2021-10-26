@@ -1,17 +1,17 @@
-package org.crayzer.conc.juc.testcase.thread8;
+package org.crayzer.conc.juc.thread8;
 
 import org.junit.Test;
 
 /**
- * 两个普通同步方法，两个线程，标准打印， 打印? //one  two
+ * 新增 Thread.sleep() 给 getOne() ,打印? //one  two
  *
  * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  * @since 1.0.0
  */
-public class TestThread8Monitor1 {
+public class TestThread8Monitor2 {
     @Test
     public void thread8MonitorTest() {
-        Number number = new Number();
+        Number2 number = new Number2();
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -27,10 +27,15 @@ public class TestThread8Monitor1 {
     }
 }
 
-class Number {
+class Number2 {
     public synchronized void getOne() {
+        try {
+            Thread.sleep(3000);//让one 睡3秒
+        } catch (InterruptedException e) {
+        }
         System.out.println("one");
     }
+
     public synchronized void getTwo() {
         System.out.println("two");
     }

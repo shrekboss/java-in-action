@@ -1,4 +1,4 @@
-package org.crayzer.conc.juc.testcase;
+package org.crayzer.conc.juc;
 
 import org.junit.Test;
 

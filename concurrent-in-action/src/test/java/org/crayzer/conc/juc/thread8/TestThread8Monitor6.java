@@ -1,19 +1,18 @@
-package org.crayzer.conc.juc.testcase.thread8;
+package org.crayzer.conc.juc.thread8;
 
 import org.junit.Test;
 
 /**
- * 两个静态同步方法，两个 Number 对象?   //one  two
+ * 修改两个方法均为静态同步方法，一个 Number 对象?  //one   two
  *
  * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  * @since 1.0.0
  */
-public class TestThread8Monitor8 {
+public class TestThread8Monitor6 {
 
     @Test
     public void thread8MonitorTest() {
-        Number8 number = new Number8();
-        Number8 number2 = new Number8();
+        Number6 number = new Number6();
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -24,14 +23,13 @@ public class TestThread8Monitor8 {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                number2.getTwo();
+                number.getTwo();
             }
         }).start();
     }
 }
 
-class Number8 {
-
+class Number6 {
     public static synchronized void getOne() {
         try {
             Thread.sleep(3000);
