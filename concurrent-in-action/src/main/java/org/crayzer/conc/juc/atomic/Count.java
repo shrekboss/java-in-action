@@ -1,5 +1,5 @@
 
-package org.crayzer.conc.jdkconcurrentutil.atomic;
+package org.crayzer.conc.juc.atomic;
 
 public class Count {
 

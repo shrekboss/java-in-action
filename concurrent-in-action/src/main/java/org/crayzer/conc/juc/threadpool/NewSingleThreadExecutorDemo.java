@@ -1,5 +1,5 @@
 
-package org.crayzer.conc.jdkconcurrentutil.threadpool;
+package org.crayzer.conc.juc.threadpool;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

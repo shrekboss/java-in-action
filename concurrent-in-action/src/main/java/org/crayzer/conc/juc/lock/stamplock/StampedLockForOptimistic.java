@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.lock.stamplock;
+package org.crayzer.conc.juc.lock.stamplock;
 
 import java.util.concurrent.locks.StampedLock;
 

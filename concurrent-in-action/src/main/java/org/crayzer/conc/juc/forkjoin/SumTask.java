@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.forkjoin;
+package org.crayzer.conc.juc.forkjoin;
 
 import java.util.Random;
 import java.util.concurrent.ForkJoinPool;

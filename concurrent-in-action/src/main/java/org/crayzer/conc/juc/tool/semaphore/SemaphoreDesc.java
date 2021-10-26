@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.tool.semaphore;
+package org.crayzer.conc.juc.tool.semaphore;
 
 
 import java.util.Queue;

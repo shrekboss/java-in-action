@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.threadpool;
+package org.crayzer.conc.juc.threadpool;
 
 import java.util.ArrayList;
 import java.util.List;

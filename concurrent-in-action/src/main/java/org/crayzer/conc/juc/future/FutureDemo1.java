@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.future;
+package org.crayzer.conc.juc.future;
 
 import java.util.Random;
 import java.util.concurrent.*;

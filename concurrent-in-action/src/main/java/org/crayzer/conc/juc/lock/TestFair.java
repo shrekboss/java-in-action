@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.lock;
+package org.crayzer.conc.juc.lock;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.locks.ReentrantLock;

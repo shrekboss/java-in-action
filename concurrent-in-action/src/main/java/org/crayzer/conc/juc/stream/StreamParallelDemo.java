@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.stream;
+package org.crayzer.conc.juc.stream;
 
 import java.util.ArrayList;
 import java.util.List;

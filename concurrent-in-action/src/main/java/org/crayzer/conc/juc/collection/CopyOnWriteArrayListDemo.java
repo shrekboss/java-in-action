@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.collection;
+package org.crayzer.conc.juc.collection;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;

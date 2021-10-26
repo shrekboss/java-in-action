@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.tool.cyclicBarrier;
+package org.crayzer.conc.juc.tool.cyclicBarrier;
 
 import java.util.concurrent.CyclicBarrier;
 

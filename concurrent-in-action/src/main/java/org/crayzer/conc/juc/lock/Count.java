@@ -1,5 +1,5 @@
 
-package org.crayzer.conc.jdkconcurrentutil.lock;
+package org.crayzer.conc.juc.lock;
 
 import java.util.concurrent.locks.ReentrantLock;
 

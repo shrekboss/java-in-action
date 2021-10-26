@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.threadlocal;
+package org.crayzer.conc.juc.threadlocal;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

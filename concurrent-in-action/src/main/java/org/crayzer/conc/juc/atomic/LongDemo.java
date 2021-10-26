@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.atomic;
+package org.crayzer.conc.juc.atomic;
 
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.LongAdder;

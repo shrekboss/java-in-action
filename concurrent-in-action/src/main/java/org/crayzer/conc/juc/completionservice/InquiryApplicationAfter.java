@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.completionservice;
+package org.crayzer.conc.juc.completionservice;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil.future.completablefuture;
+package org.crayzer.conc.juc.future.completablefuture;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;

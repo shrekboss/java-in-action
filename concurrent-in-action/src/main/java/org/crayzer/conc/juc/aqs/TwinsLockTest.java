@@ -1,6 +1,6 @@
-package org.crayzer.conc.jdkconcurrentutil.aqs;
+package org.crayzer.conc.juc.aqs;
 
-import org.crayzer.conc.jdkconcurrentutil.SleepUtils;
+import org.crayzer.conc.juc.SleepUtils;
 
 import java.util.concurrent.locks.Lock;
 

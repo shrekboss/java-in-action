@@ -1,5 +1,5 @@
 
-package org.crayzer.conc.jdkconcurrentutil.tool;
+package org.crayzer.conc.juc.tool;
 
 import java.util.concurrent.Semaphore;
 

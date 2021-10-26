@@ -1,4 +1,4 @@
-package org.crayzer.conc.jdkconcurrentutil;
+package org.crayzer.conc.juc;
 
 import java.util.concurrent.TimeUnit;
 

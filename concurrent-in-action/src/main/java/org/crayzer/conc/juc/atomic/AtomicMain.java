@@ -1,4 +1,3 @@
-
 package org.crayzer.conc.juc.atomic;
 
 public class AtomicMain {
