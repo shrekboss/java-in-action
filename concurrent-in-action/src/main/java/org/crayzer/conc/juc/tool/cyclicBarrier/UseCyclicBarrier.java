@@ -7,6 +7,10 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CyclicBarrier;
 
 /**
+ * {@link CyclicBarrier} 俗称栅栏锁,作用是让一组线程到达某个屏障,被阻塞,一直到组内的最后一个线程到达,然后屏障开放,所有线程继续运行
+ * <p/>传入的参数 parties 需要和线程数量吻合
+ * <p/>传入的参数 barrierAction 当屏障开放后,执行的任务线程
+ *
  * @author <a href="mailto:yeqi@banniuyun.com">夜骐</a>
  * @since 1.0.0
  */

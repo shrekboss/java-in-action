@@ -1,16 +1,21 @@
 package org.crayzer.conc.juc.tool.countDownLatch;
 
 import org.crayzer.conc.juc.SleepTools;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.CountDownLatch;
 
 /**
- * TODO：简单描述一嘴
+ * {@link CountDownLatch} 俗称闭锁,作用类似加强版的Join,是让一组线程等待其他的线程完成工作以后才执行
+ * <p/>传入的参数 count 可以大于等于
  *
  * @author <a href="mailto:yeqi@banniuyun.com">夜骐</a>
  * @since 1.0.0
  */
 public class UseCountDownLatch {
+
+    private static final Logger logger = LoggerFactory.getLogger(UseCountDownLatch.class);
 
     /**
      * 设置6个扣除点
@@ -18,19 +23,15 @@ public class UseCountDownLatch {
     static CountDownLatch countDownLatch = new CountDownLatch(6);
 
     public static void main(String[] args) {
-        new Thread() {
-
-            @Override
-            public void run() {
-                SleepTools.ms(1);
-                System.out.println("thread_" + Thread.currentThread().getId() + " ready init work step 1st...");
-                countDownLatch.countDown();
-                System.out.println("begin stop 2nd...");
-                SleepTools.ms(1);
-                System.out.println("thread_" + Thread.currentThread().getId() + " ready init work step 2st...");
-                countDownLatch.countDown();
-            }
-        }.start();
+        new Thread(() -> {
+            SleepTools.ms(1);
+            logger.info("thread_" + Thread.currentThread().getId() + " ready init work step 1st...");
+            countDownLatch.countDown();
+            logger.info("begin stop 2nd...");
+            SleepTools.ms(1);
+            logger.info("thread_" + Thread.currentThread().getId() + " ready init work step 2st...");
+            countDownLatch.countDown();
+        }).start();
 
         new Thread(new BizThread()).start();
 
@@ -40,19 +41,21 @@ public class UseCountDownLatch {
 
         try {
             countDownLatch.await();
-            System.out.println("Main do its work...");
+            logger.info("Main do its work...");
         } catch (InterruptedException e) {
             e.printStackTrace();
+            // Restore interrupted state...
+            Thread.currentThread().interrupt();
         }
     }
 
     private static class InitThread implements Runnable {
         @Override
         public void run() {
-            System.out.println("thread_" + Thread.currentThread().getId() + " ready init work...");
+            logger.info("thread_" + Thread.currentThread().getId() + " ready init work...");
             countDownLatch.countDown();
             for (int i = 0; i < 2; i++) {
-                System.out.println("thread_" + Thread.currentThread().getId() + "...continue do its work");
+                logger.info("thread_" + Thread.currentThread().getId() + "...continue do its work");
             }
         }
     }
@@ -63,7 +66,7 @@ public class UseCountDownLatch {
             try {
                 countDownLatch.await();
                 for (int i = 0; i < 3; i++) {
-                    System.out.println("bizThread_" + Thread.currentThread().getId() + " do business...");
+                    logger.info("bizThread_" + Thread.currentThread().getId() + " do business...");
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
