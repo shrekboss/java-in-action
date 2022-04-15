@@ -1,5 +1,8 @@
 package org.crayzer.conc.juc.tool.cyclicBarrier;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
@@ -15,6 +18,8 @@ import java.util.concurrent.CyclicBarrier;
  * @since 1.0.0
  */
 public class UseCyclicBarrier {
+
+    private static final Logger logger = LoggerFactory.getLogger(UseCyclicBarrier.class);
 
     private static ConcurrentHashMap<String, Long> resultMap = new ConcurrentHashMap<>();
 
@@ -36,8 +41,8 @@ public class UseCyclicBarrier {
                 result.append("[" + workResult.getValue() + "]");
             }
 
-            System.out.println("the result = " + result);
-            System.out.println("do other business...");
+            logger.info("the result = " + result);
+            logger.info("do other business...");
         }
     }
 
@@ -54,12 +59,12 @@ public class UseCyclicBarrier {
             try {
                 if (random.nextBoolean()) {
                     Thread.sleep(1000 + id);
-                    System.out.println("Thread_" + id + "...do something");
+                    logger.info("Thread_" + id + "...do something");
                 }
-                System.out.println(id + " is await");
+                logger.info(id + " is await");
                 cyclicBarrier.await();
                 Thread.sleep(1000 + id);
-                System.out.println("Thread_" + id + "...do its business");
+                logger.info("Thread_" + id + "...do its business");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (BrokenBarrierException e) {
