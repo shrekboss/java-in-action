@@ -1,4 +1,4 @@
-package org.crayzer.conc.juc.tool;
+package org.crayzer.conc.juc.tool.cyclicBarrier;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

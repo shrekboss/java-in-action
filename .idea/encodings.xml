@@ -1,7 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/concurrent-in-action/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/concurrent-in-action/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/design-in-action/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/design-in-action/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/err-in-action/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/err-in-action/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jvm-in-action/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jvm-in-action/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lambda-in-action/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lambda-in-action/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nio-in-action/netty-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nio-in-action/netty-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nio-in-action/nio-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nio-in-action/nio-base/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nio-in-action/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nio-in-action/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/req-param-validate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/req-param-validate/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/annotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/aop-features/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/aop-features/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/aop-overview/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/aop-overview/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/application-context-lifecycle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/application-context-lifecycle/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/bean-lifecycle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/bean-lifecycle/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/bean-scope/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/bean-scope/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/configuration-metadata/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/configuration-metadata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/conversion/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/conversion/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/data-binding/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/data-binding/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/dependency-injection/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/dependency-injection/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/dependency-lookup/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/dependency-lookup/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/dependency-source/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/dependency-source/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/environment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/environment/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/event/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/event/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/generic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/generic/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/i18n/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/i18n/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/ioc-container-overview/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/ioc-container-overview/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/questions/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/questions/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/resource/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/resource/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/spring-bean/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/spring-bean/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/validation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-in-action/thinking-in-spring/validation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>

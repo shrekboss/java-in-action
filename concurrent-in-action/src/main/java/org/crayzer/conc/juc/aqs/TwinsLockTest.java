@@ -1,6 +1,6 @@
 package org.crayzer.conc.juc.aqs;
 
-import org.crayzer.conc.juc.SleepUtils;
+import org.crayzer.conc.juc.SleepTools;
 
 import java.util.concurrent.locks.Lock;
 
@@ -15,9 +15,9 @@ public class TwinsLockTest {
                 while (true) {
                     lock.lock();
                     try {
-                        SleepUtils.second(1);
+                        SleepTools.second(1);
                         System.out.println(Thread.currentThread().getName());
-                        SleepUtils.second(1);
+                        SleepTools.second(1);
                     } finally {
                         lock.unlock();
                     }
@@ -31,7 +31,7 @@ public class TwinsLockTest {
             w.start();
         }
         for (int i = 0; i < 10; i++) {
-            SleepUtils.second(1);
+            SleepTools.second(1);
             System.out.println(i);
         }
     }

@@ -6,7 +6,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="data-binding" />
+        <module name="design-in-action" />
+        <module name="dependency-injection" />
+        <module name="questions" />
+        <module name="concurrent-in-action" />
         <module name="configuration-metadata" />
+        <module name="dependency-source" />
+        <module name="req-param-validate" />
+        <module name="jvm-in-action" />
+        <module name="bean-lifecycle" />
+        <module name="event" />
+        <module name="bean-scope" />
+        <module name="ioc-container-overview" />
+        <module name="validation" />
+        <module name="aop-overview" />
+        <module name="conversion" />
+        <module name="annotation" />
+        <module name="resource" />
+        <module name="dependency-lookup" />
+        <module name="aop-features" />
+        <module name="nio-base" />
+        <module name="netty-gateway" />
+        <module name="lambda-in-action" />
+        <module name="application-context-lifecycle" />
+        <module name="i18n" />
+        <module name="generic" />
+        <module name="environment" />
+        <module name="spring-bean" />
+        <module name="err-in-action" />
       </profile>
     </annotationProcessing>
   </component>
