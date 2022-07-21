@@ -1,4 +1,4 @@
-package org.crayzer.spring.validate.model;
+package org.crayzer.validate.model;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

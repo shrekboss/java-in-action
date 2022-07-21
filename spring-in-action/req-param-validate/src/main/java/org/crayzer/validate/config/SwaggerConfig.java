@@ -1,4 +1,4 @@
-package org.crayzer.spring.validate.config;
+package org.crayzer.validate.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

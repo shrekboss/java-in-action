@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.crayzer.spring.validate.mapper.AccountMapper">
-    <resultMap id="BaseResultMap" type="org.crayzer.spring.validate.model.Account">
+<mapper namespace="org.crayzer.validate.mapper.AccountMapper">
+    <resultMap id="BaseResultMap" type="org.crayzer.validate.model.Account">
         <id column="id" jdbcType="INTEGER" property="id"/>
         <result column="name" jdbcType="VARCHAR" property="name"/>
         <result column="balance" jdbcType="DOUBLE" property="balance"/>
@@ -20,7 +20,7 @@
     <insert id="insert"
             keyColumn="id"
             keyProperty="id"
-            parameterType="org.crayzer.spring.validate.model.Account"
+            parameterType="org.crayzer.validate.model.Account"
             useGeneratedKeys="true">
         insert into `account` (`name`, balance)
         values (#{name,jdbcType=VARCHAR}, #{balance,jdbcType=DOUBLE})

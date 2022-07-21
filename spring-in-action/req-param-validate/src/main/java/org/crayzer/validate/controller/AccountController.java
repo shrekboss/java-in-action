@@ -1,14 +1,14 @@
-package org.crayzer.spring.validate.controller;
+package org.crayzer.validate.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.crayzer.spring.validate.common.BusinessException;
-import org.crayzer.spring.validate.common.ResultBean;
-import org.crayzer.spring.validate.model.Account;
-import org.crayzer.spring.validate.service.AccountService;
+import org.crayzer.validate.common.BusinessException;
+import org.crayzer.validate.common.ResultBean;
+import org.crayzer.validate.model.Account;
+import org.crayzer.validate.service.AccountService;
 import org.springframework.http.MediaType;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;

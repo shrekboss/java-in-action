@@ -1,7 +1,8 @@
-package org.crayzer.spring.validate;
+package org.crayzer.validate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
  * class_name: Application
@@ -10,9 +11,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author <a href="mailto:crayzer.chen@gmail.com">crayzer</a>
  **/
+@EnableAsync
 @SpringBootApplication
-public class Application {
+public class ValidateApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(ValidateApplication.class, args);
     }
 }

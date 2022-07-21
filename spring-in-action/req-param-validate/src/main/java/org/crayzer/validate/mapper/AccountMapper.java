@@ -1,7 +1,7 @@
-package org.crayzer.spring.validate.mapper;
+package org.crayzer.validate.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.crayzer.spring.validate.model.Account;
+import org.crayzer.validate.model.Account;
 
 
 @Mapper

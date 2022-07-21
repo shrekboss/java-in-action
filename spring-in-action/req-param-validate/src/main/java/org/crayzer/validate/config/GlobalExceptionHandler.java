@@ -1,10 +1,10 @@
-package org.crayzer.spring.validate.config;
+package org.crayzer.validate.config;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.crayzer.spring.validate.common.BusinessException;
-import org.crayzer.spring.validate.common.ResultBean;
+import org.crayzer.validate.common.BusinessException;
+import org.crayzer.validate.common.ResultBean;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindException;

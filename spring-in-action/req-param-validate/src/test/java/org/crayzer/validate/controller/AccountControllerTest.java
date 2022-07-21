@@ -1,8 +1,8 @@
-package org.crayzer.spring.validate.controller;
+package org.crayzer.validate.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.crayzer.spring.validate.common.ResultBean;
-import org.crayzer.spring.validate.model.Account;
+import org.crayzer.validate.common.ResultBean;
+import org.crayzer.validate.model.Account;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

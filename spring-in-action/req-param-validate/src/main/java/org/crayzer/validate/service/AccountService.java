@@ -1,6 +1,6 @@
-package org.crayzer.spring.validate.service;
+package org.crayzer.validate.service;
 
-import org.crayzer.spring.validate.model.Account;
+import org.crayzer.validate.model.Account;
 
 public interface AccountService {
     /**
