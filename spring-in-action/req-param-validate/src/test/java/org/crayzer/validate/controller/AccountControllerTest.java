@@ -59,12 +59,12 @@ public class AccountControllerTest {
     public void add() throws Exception {
         Account account = new Account();
         // 参数校验不通过
-        mockMvc.perform(post("/account/add")
-                .contentType(MediaType.APPLICATION_JSON_UTF8_VALUE)
-                .content(JACKSON_MAPPER.writeValueAsString(account)))
-                .andDo(print())
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(model().attribute("msg", "姓名不能为空"));
+        //mockMvc.perform(post("/account/add")
+        //        .contentType(MediaType.APPLICATION_JSON_UTF8_VALUE)
+        //        .content(JACKSON_MAPPER.writeValueAsString(account)))
+        //        .andDo(print())
+        //        .andExpect(MockMvcResultMatchers.status().isOk())
+        //        .andExpect(model().attribute("msg", "姓名不能为空"));
 
         // 正确添加并返回
         account = new Account("尼古拉斯", 10000.0);

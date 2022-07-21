@@ -1,11 +1,0 @@
-
-M
-java:S1854"7Remove this useless assignment to local variable "sum".(·½ÇÖ
-R
-java:S1854"7Remove this useless assignment to local variable "sum".(Ò®ñÊúÿÿÿÿ
-R
-java:S1854"7Remove this useless assignment to local variable "sum".(çåú§ýÿÿÿÿ
->
-java:S1481"(Remove this unused "sum" local variable.(·½ÇÖ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ªæ¤²øÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ªæ¤²øÿÿÿÿ

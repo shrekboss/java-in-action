@@ -17,6 +17,7 @@
     <modules>
         <module>thinking-in-spring</module>
         <module>req-param-validate</module>
+        <module>spring-event-template</module>
     </modules>
 
 </project>
