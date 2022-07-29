@@ -15,6 +15,7 @@
     <name>unit-test</name>
 
     <dependencies>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
