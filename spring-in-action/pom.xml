@@ -19,6 +19,7 @@
         <module>req-param-validate</module>
         <module>spring-event-template</module>
         <module>generate-data</module>
+        <module>unit-test</module>
     </modules>
 
 </project>
