@@ -8,6 +8,8 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
+ * 一个简单的Netty服务端示例
+ *
  * @author <a href="mailto:yeqi@banniuyun.com">夜骐</a>
  * @since 1.0.0
  */
@@ -31,8 +33,10 @@ public class NettyServer {
 
         try {
             ServerBootstrap b = new ServerBootstrap();
-            b.group(parentGroup, childGroup).channel(NioServerSocketChannel.class) // 非阻塞模式
-                    .option(ChannelOption.SO_BACKLOG, 128).childHandler(new MyChannelInitializer());
+            b.group(parentGroup, childGroup)
+                    .channel(NioServerSocketChannel.class) // 非阻塞模式
+                    .option(ChannelOption.SO_BACKLOG, 128)
+                    .childHandler(new MyChannelInitializer());
             ChannelFuture f = b.bind(port).sync();
             f.channel().closeFuture().sync();
         } catch (InterruptedException e) {
