@@ -17,8 +17,28 @@
 
     <name>io-in-action</name>
 
+    <properties>
+        <netty_version>4.1.77.Final</netty_version>
+    </properties>
+
     <modules>
         <module>crayzer-demo-netty-1-00</module>
+        <module>crayzer-demo-netty-1-01</module>
     </modules>
+
+    <dependencies>
+        <!-- Netty4.1 -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${netty_version}</version>
+        </dependency>
+        <!-- Log -->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+    </dependencies>
 
 </project>
