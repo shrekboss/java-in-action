@@ -28,7 +28,7 @@ public class NioServer {
             socketChannel.socket().bind(new InetSocketAddress(port), 1024);
             socketChannel.register(selector, SelectionKey.OP_ACCEPT);
             System.out.println("crayzer-demo-netty server start done.");
-            new NioServerHandler(selector, Charset.forName("utf-8")).start();
+            new NioServerHandler(selector, Charset.forName("GBK")).start();
         } catch (IOException e) {
             e.printStackTrace();
         }

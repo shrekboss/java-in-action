@@ -20,7 +20,7 @@ public class ChannelHandler {
     }
 
     public void writeAndFlush(Object msg) {
-        OutputStream out = null;
+        OutputStream out;
         try {
             out = socket.getOutputStream();
             out.write((msg.toString()).getBytes(charset));

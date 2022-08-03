@@ -11,15 +11,12 @@ import java.util.Iterator;
 import java.util.Set;
 
 /**
- * TODO：简单描述一嘴
- *
  * @author <a href="mailto:yeqi@banniuyun.com">夜骐</a>
  * @since 1.0.0
  */
 public abstract class ChannelAdapter extends Thread {
 
     private Selector selector;
-
     private ChannelHandler channelHandler;
     private Charset charset;
 
@@ -35,7 +32,7 @@ public abstract class ChannelAdapter extends Thread {
                 selector.select(1000);  //Selects a set of keys whose corresponding channels are ready for I/O
                 Set<SelectionKey> selectedKeys = selector.selectedKeys();
                 Iterator<SelectionKey> it = selectedKeys.iterator();
-                SelectionKey key = null;
+                SelectionKey key;
                 while (it.hasNext()) {
                     key = it.next();
                     it.remove();
@@ -47,7 +44,9 @@ public abstract class ChannelAdapter extends Thread {
     }
 
     private void handleInput(SelectionKey key) throws IOException {
-        if (!key.isValid()) return;
+        if (!key.isValid()) {
+            return;
+        }
 
         // 客户端SocketChannel
         Class<?> superclass = key.channel().getClass().getSuperclass();

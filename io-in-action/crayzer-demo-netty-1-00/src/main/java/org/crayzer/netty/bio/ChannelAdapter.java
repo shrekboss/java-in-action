@@ -31,7 +31,7 @@ public abstract class ChannelAdapter extends Thread {
     public void run() {
         try {
             BufferedReader input = new BufferedReader(new InputStreamReader(this.socket.getInputStream()));
-            String str = null;
+            String str;
             while ((str = input.readLine()) != null) {
                 channelRead(channelHandler, str);
             }

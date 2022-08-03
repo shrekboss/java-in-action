@@ -5,8 +5,6 @@ import java.nio.channels.AsynchronousSocketChannel;
 import java.nio.charset.Charset;
 
 /**
- * TODO：简单描述一嘴
- *
  * @author <a href="mailto:yeqi@banniuyun.com">夜骐</a>
  * @since 1.0.0
  */
@@ -30,9 +28,5 @@ public class ChannelHandler {
 
     public AsynchronousSocketChannel channel() {
         return channel;
-    }
-
-    public void setChannel(AsynchronousSocketChannel channel) {
-        this.channel = channel;
     }
 }
