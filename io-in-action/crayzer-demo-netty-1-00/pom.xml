@@ -12,11 +12,4 @@
 
     <name>crayzer-demo-netty-1-00</name>
 
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 </project>

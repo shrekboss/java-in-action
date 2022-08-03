@@ -1,10 +1,10 @@
-package org.crayzer.netty;
+package org.crayzer;
 
 /**
  * Hello world!
  *
  */
-public class App
+public class App 
 {
     public static void main( String[] args )
     {
