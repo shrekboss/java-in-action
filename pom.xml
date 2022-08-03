@@ -16,6 +16,7 @@
         <module>lambda-in-action</module>
         <module>design-in-action</module>
         <module>err-in-action</module>
+        <module>io-in-action</module>
     </modules>
 
     <packaging>pom</packaging>

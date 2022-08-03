@@ -2,23 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <parent>
-        <artifactId>thinking-in-spring</artifactId>
+        <artifactId>java-in-action</artifactId>
         <groupId>org.crayzer</groupId>
         <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dependency-lookup</artifactId>
-    <name>Dependency Lookup专题</name>
+    <artifactId>io-in-action</artifactId>
+    <packaging>pom</packaging>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.crayzer</groupId>
-            <artifactId>ioc-container-overview</artifactId>
-            <version>${revision}</version>
-        </dependency>
-    </dependencies>
+    <name>io-in-action</name>
+
+    <modules>
+        <module>crayzer-demo-netty-1-00</module>
+    </modules>
 
 </project>
