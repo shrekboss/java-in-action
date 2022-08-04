@@ -1,4 +1,4 @@
-package org.crayzer.netty.server;
+package org.crayzer.netty.client;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
@@ -34,6 +34,7 @@ public class NettyClient {
             f.channel().closeFuture().sync();
         } catch (InterruptedException e) {
             e.printStackTrace();
+            Thread.currentThread().interrupt();
         } finally {
             workerGroup.shutdownGracefully();
         }

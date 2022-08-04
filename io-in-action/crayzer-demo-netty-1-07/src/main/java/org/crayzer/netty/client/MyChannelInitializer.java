@@ -1,4 +1,4 @@
-package org.crayzer.netty.server;
+package org.crayzer.netty.client;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.socket.SocketChannel;
