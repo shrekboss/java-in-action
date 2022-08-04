@@ -8,6 +8,8 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
+ * NettyServer接收数据
+ *
  * @author <a href="mailto:yeqi@banniuyun.com">夜骐</a>
  * @since 1.0.0
  */
@@ -30,7 +32,7 @@ public class NettyServer {
                     .option(ChannelOption.SO_BACKLOG, 128)
                     .childHandler(new MyChannelInitializer());
             ChannelFuture f = b.bind(port).sync();
-            System.out.println("crayzer-demo-netty server start done.");
+            System.out.println("crayzer-demo-netty-02 server start done.");
             f.channel().closeFuture().sync();
         } catch (InterruptedException e) {
             e.printStackTrace();

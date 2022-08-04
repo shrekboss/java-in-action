@@ -8,7 +8,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
- * 一个简单的Netty服务端示例
+ * NettyServer字符串解码器，发送换行信息
  *
  * @author <a href="mailto:yeqi@banniuyun.com">夜骐</a>
  * @since 1.0.0
@@ -19,26 +19,20 @@ public class NettyServer {
         new NettyServer().bing(7397);
     }
 
-    /**
-     * method_name: bing
-     * param: port 端口
-     * describe: NioEventLoopGroup extends MultithreadEventLoopGroup
-     * Math.max(1, SystemPropertyUtil.getInt("io.netty.eventLoopThreads", NettyRuntime.availableProcessors() * 2));
-     **/
     private void bing(int port) {
-        //配置服务端NIO线程组
+
         EventLoopGroup parentGroup = new NioEventLoopGroup();
         EventLoopGroup childGroup = new NioEventLoopGroup();
-        //
 
         try {
             ServerBootstrap b = new ServerBootstrap();
             b.group(parentGroup, childGroup)
-                    .channel(NioServerSocketChannel.class) // 非阻塞模式
+                    //非阻塞模式
+                    .channel(NioServerSocketChannel.class)
                     .option(ChannelOption.SO_BACKLOG, 128)
                     .childHandler(new MyChannelInitializer());
             ChannelFuture f = b.bind(port).sync();
-            System.out.println("crayzer-demo-netty-01 server start done.");
+            System.out.println("crayzer-demo-netty-03 server start done. ");
             f.channel().closeFuture().sync();
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -46,5 +40,6 @@ public class NettyServer {
             childGroup.shutdownGracefully();
             parentGroup.shutdownGracefully();
         }
+
     }
 }
