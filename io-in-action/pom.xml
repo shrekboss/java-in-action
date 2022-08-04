@@ -29,6 +29,12 @@
         <module>crayzer-demo-netty-1-04</module>
         <module>crayzer-demo-netty-1-05</module>
         <module>crayzer-demo-netty-1-06</module>
+        <module>crayzer-demo-netty-1-07</module>
+        <module>crayzer-demo-netty-1-08</module>
+        <module>crayzer-demo-netty-1-09</module>
+        <module>crayzer-demo-netty-1-10</module>
+        <module>crayzer-demo-netty-1-11</module>
+        <module>crayzer-demo-netty-1-12</module>
     </modules>
 
     <dependencies>
