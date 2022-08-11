@@ -13,7 +13,6 @@
     <artifactId>netty-gateway</artifactId>
 
     <name>netty-gateway</name>
-    <description>Demo project for Spring Boot</description>
 
     <dependencies>
 
