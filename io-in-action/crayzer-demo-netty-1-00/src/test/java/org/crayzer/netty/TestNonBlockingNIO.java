@@ -11,6 +11,15 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 /**
+ * <p>创建 ServerSocketChannel:
+ * <p>- 绑定监听端口，并配置为非阻塞模式。
+ * <p>创建 Selector，将之前创建的 ServerSocketChannel 注册到 Selector 上，监听 SelectionKey.OP_ACCEPT
+ * <p>- 循环执行 Selector#select() 方法，轮询就绪的 Channel。
+ * <p>轮询就绪的 Channel 时，如果是处于 OP_ACCEPT 状态，说明是新的客户端接入，调用 ServerSocketChannel#accept() 方法，接收新的客户端
+ * <p>- 设置新接入的 SocketChannel 为非阻塞模式，并注册到 Selector 上，监听 OP_READ 。
+ * <p>如果轮询的 Channel 状态是 OP_READ ，说明有新的就绪数据包需要读取，则构造 ByteBuffer 对象，读取数据
+ * <p>- 这里，解码数据包的过程，需要我们自己编写。
+ *
  * @author <a href="mailto:yeqi@banniuyun.com">夜骐</a>
  * @since 1.0.0
  */
@@ -20,13 +29,10 @@ public class TestNonBlockingNIO {
     public void client() throws IOException {
         //1. 获取通道
         SocketChannel sChannel = SocketChannel.open(new InetSocketAddress("127.0.0.1", 9898));
-
         //2. 切换非阻塞模式
         sChannel.configureBlocking(false);
-
         //3. 分配指定大小的缓冲区
         ByteBuffer buf = ByteBuffer.allocate(1024);
-
         //4. 发送数据给服务端
         Scanner scan = new Scanner(System.in);
 
@@ -37,7 +43,6 @@ public class TestNonBlockingNIO {
             sChannel.write(buf);
             buf.clear();
         }
-
         sChannel.close();
     }
 
