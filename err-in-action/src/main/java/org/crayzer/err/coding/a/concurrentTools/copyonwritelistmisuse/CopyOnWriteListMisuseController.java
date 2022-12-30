@@ -1,4 +1,4 @@
-package org.crayzer.err.coding.concurrentTools.copyonwritelistmisuse;
+package org.crayzer.err.coding.a.concurrentTools.copyonwritelistmisuse;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.StopWatch;

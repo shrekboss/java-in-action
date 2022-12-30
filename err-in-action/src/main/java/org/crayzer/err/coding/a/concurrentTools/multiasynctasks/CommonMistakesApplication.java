@@ -1,4 +1,4 @@
-package org.crayzer.err.coding.concurrentTools.multiasynctasks;
+package org.crayzer.err.coding.a.concurrentTools.multiasynctasks;
 
 import lombok.extern.slf4j.Slf4j;
 

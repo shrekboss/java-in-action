@@ -1,8 +1,7 @@
-package org.crayzer.err.coding.concurrentTools.concurrenthashmapperformance;
+package org.crayzer.err.coding.a.concurrentTools.concurrenthashmapmisuse;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 
 @SpringBootApplication
 public class CommonMistakesApplication {

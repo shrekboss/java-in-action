@@ -1,4 +1,4 @@
-package org.crayzer.err.coding.concurrentTools.ciavspia;
+package org.crayzer.err.coding.a.concurrentTools.ciavspia;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

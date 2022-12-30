@@ -1,4 +1,4 @@
-package org.crayzer.err.coding.concurrentTools.concurrenthashmapmisuse;
+package org.crayzer.err.coding.a.concurrentTools.concurrenthashmapmisuse;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.Assert;
@@ -64,7 +64,7 @@ public class ConcurrentHashMapMisuseController {
         forkJoinPool.shutdown();
         forkJoinPool.awaitTermination(1, TimeUnit.HOURS);
         //最后元素个数会是1000吗？
-        log.info("finish size:{}", concurrentHashMap.size());
+        log.info("finish size:[{}]", concurrentHashMap.size());
         return "OK";
     }
 

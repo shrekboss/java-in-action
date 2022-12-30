@@ -1,4 +1,4 @@
-package org.crayzer.err.coding.concurrentTools;
+package org.crayzer.err.coding.a.concurrentTools;
 
 import java.util.concurrent.CountDownLatch;
 

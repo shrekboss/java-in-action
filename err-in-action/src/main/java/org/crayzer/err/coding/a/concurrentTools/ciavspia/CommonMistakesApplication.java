@@ -1,4 +1,4 @@
-package org.crayzer.err.coding.concurrentTools.ciavspia;
+package org.crayzer.err.coding.a.concurrentTools.ciavspia;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.StopWatch;

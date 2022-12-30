@@ -1,5 +1,7 @@
-package org.crayzer.err.coding.concurrentTools.threadlocal;
+package org.crayzer.err.coding.a.concurrentTools.threadlocal;
 
+import groovy.util.logging.Slf4j;
+import jline.internal.Log;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +16,7 @@ import java.util.stream.IntStream;
  */
 @RestController
 @RequestMapping("threadlocalmemoryleak")
+@Slf4j
 public class ThreadLocalMemoryLeakController {
 
     private static final ThreadLocal<List<String>> data = ThreadLocal.withInitial(() -> null);
@@ -22,8 +25,10 @@ public class ThreadLocalMemoryLeakController {
     public void wrong() {
         List<String> d = IntStream.rangeClosed(1, 10).mapToObj(i -> IntStream.rangeClosed(1, 1000000)
                 .mapToObj(__ -> "a")
-                .collect(Collectors.joining("")) + UUID.randomUUID().toString())
+                .collect(Collectors.joining("")) + UUID.randomUUID())
                 .collect(Collectors.toList());
         data.set(d);
+
+        Log.info("data:[{}]", data);
     }
 }
