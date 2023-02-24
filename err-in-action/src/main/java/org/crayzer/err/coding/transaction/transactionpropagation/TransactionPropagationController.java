@@ -15,7 +15,7 @@ public class TransactionPropagationController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("wrong")
+    @GetMapping("wrong1")
     public int wrong(@RequestParam("name") String name) {
         try {
             userService.createUserWrong(new UserEntity(name));
@@ -35,7 +35,7 @@ public class TransactionPropagationController {
         return userService.getUserCount(name);
     }
 
-    @GetMapping("right")
+    @GetMapping("right1")
     public int right(@RequestParam("name") String name) {
         userService.createUserRight(new UserEntity(name));
         return userService.getUserCount(name);
