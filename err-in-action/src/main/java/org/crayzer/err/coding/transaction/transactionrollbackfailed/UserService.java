@@ -58,7 +58,7 @@ public class UserService {
             // “Transactional code has requested rollback”的提示，表明手动请求回滚：
             TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
         }
-        log.info("result {} ", userRepository.findByName(name).size());//为什么这里是1你能想明白吗？
+        log.info("result {} ", userRepository.findByName(name).size());
     }
 
     // 期望遇到所有的 Exception 都回滚事务
